@@ -1,0 +1,107 @@
+/***********************************************************************
+
+ powerups
+
+***********************************************************************/
+
+entityDef powerup_quaddamage{
+	"editor_color"			".3 .3 1"
+	"editor_mins"			"-16 -16 0"
+	"editor_maxs"			"16 16 32"
+	"size"				"32 32 32"
+
+	"editor_usage"			"Quad Damage"
+
+	"spawnclass"			"idItemPowerup"
+	"model" 				"models/items/powerups/quaddamage.ase"
+	"respawn"				"0"
+	"time"				"30"
+	"nopulse"				"1"
+	"spin"				"1"
+	"type"				"0"
+	"snd_acquire"			"quaddamage_pickup"
+	"inv_name"				""
+	"editor_copy100"			"inv_item"
+}
+
+entityDef powerup_invisibility {
+	"editor_color"			".3 .3 1"
+	"editor_mins"			"-16 -16 0"
+	"editor_maxs"			"16 16 32"
+	"size"				"32 32 32"
+
+	"editor_usage"			"Ring of Shadows"
+
+	"spawnclass"			"idItemPowerup"
+	"model" 				"models/items/powerups/ringofshadows.ase"
+	"respawn"				"0"
+	"time"				"30"
+	"nopulse"				"1"
+	"spin"				"1"
+	"type"				"1"
+	"snd_acquire"			"ringofshadows_pickup"
+	"inv_name"				""
+	"editor_copy100"			"inv_item"
+}
+
+entityDef powerup_pentagram {
+	"editor_color"			".3 .3 1"
+	"editor_mins"			"-16 -16 0"
+	"editor_maxs"			"16 16 32"
+	"size"				"32 32 32"
+
+	"editor_usage"			"Pentagram of Protection"
+
+	"spawnclass"			"idItemPowerup"
+	"model" 				"models/items/powerups/pentagram.ase"
+	"respawn"				"0"
+	"time"				"30"
+	"nopulse"				"1"
+	"spin"				"1"
+	"type"				"2"
+	"snd_acquire"			"pentagram_pickup"
+	"inv_name"				""
+	"editor_copy100"			"inv_item"
+}
+
+entityDef powerup_megahealth {
+	"editor_color"			".3 .3 1"
+	"editor_mins"			"-16 -16 0"
+	"editor_maxs"			"16 16 32"
+
+	"editor_usage"			"MegaHealth"
+
+	"spawnclass"			"idItemPowerup"
+	"model" 				"models/items/powerups/megasphere_world.lwo"
+	"respawn"				"0"
+	"time"				"30"
+	"nopulse"				"1"
+	"spin"				"0"
+	"inv_health"			"200"
+	"type"				"3"
+	"snd_acquire"			"megasphere_pickup"
+	"size"				"32 32 32"
+	"inv_name"				""
+	"editor_copy100"			"inv_item"
+}
+
+entityDef powerup_biosuit {
+	"editor_color"			".3 .3 1"
+	"editor_mins"			"-16 -16 0"
+	"editor_maxs"			"16 16 32"
+	"size"				"32 32 32"
+
+	"editor_usage"			"Biosuit"
+
+	"spawnclass"			"idItemPowerup"
+	"model" 				"models/items/powerups/adrenalin_world.lwo"
+	"respawn"				"0"
+	"time"				"60"
+	"nopulse"				"1"
+	"spin"				"1"
+	"type"				"4"
+	"inv_name"				""
+	"snd_acquire"			"pickup_adrenaline"
+	"editor_copy100"			"inv_item"	
+}
+

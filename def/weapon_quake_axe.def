@@ -1,0 +1,136 @@
+//QUIP
+//
+/***********************************************************************
+
+	weapon_quake_axe.def 
+
+***********************************************************************/
+
+export fred {
+	// view model axe
+	options -prefix FIST_
+	mesh	models/weapons/berserk/cycles/idle.mb -dest models/quake/md5/weapons/axe_view/axe
+	anim	models/weapons/berserk/cycles/idle.mb -rotate 180 -dest models/quake/md5/weapons/axe_view/idle
+	anim	models/weapons/berserk/cycles/berserk_idle.mb -rotate 180 -dest models/quake/md5/weapons/axe_view/axe_idle
+	anim	models/weapons/berserk/cycles/berserk_punch1.mb -rotate 180 -dest models/quake/md5/weapons/axe_view/axe_swing1
+	anim	models/weapons/berserk/cycles/berserk_punch2.mb -rotate 180 -dest models/quake/md5/weapons/axe_view/axe_swing2
+	anim	models/weapons/berserk/cycles/berserk_punch3.mb -rotate 180 -dest models/quake/md5/weapons/axe_view/axe_swing3
+	anim	models/weapons/berserk/cycles/berserk_punch4.mb -rotate 180 -dest models/quake/md5/weapons/axe_view/axe_swing4
+
+
+	anim	models/weapons/berserk/cycles/punch1.mb -range 30 53 -rotate 180 -dest models/quake/md5/weapons/axe_view/swing1
+	anim	models/weapons/berserk/cycles/punch2.mb -range 30 53 -rotate 180 -dest models/quake/md5/weapons/axe_view/swing2
+	anim	models/weapons/berserk/cycles/punch2.mb -range 133 160 -rotate 180 -dest models/quake/md5/weapons/axe_view/swing3
+	anim	models/weapons/berserk/cycles/punch2.mb -range 186 193 -rotate 180 -dest models/quake/md5/weapons/axe_view/swing4
+	anim	models/weapons/berserk/cycles/punch2.mb -range 193 213 -rotate 180 -dest models/quake/md5/weapons/axe_view/swing5
+	anim	models/weapons/berserk/cycles/punch2.mb -range 20 30 -rotate 180 -dest models/quake/md5/weapons/axe_view/raise
+	anim	models/weapons/berserk/cycles/punch2.mb -range 213 218 -rotate 180 -dest models/quake/md5/weapons/axe_view/lower
+}
+
+entityDef weapon_quake_axe {
+	"editor_color"					".3 .3 1"
+	"editor_mins"					"-16 -16 0"
+	"editor_maxs"					"16 16 32"
+	"editor_usage"					"Axe"
+	"editor_rotatable"				"1"
+	
+	"spawnclass"					"idItem"
+	"size"							"32 32 32"
+	"model"							"models/quake/weapons/axe/w_axe.ase"
+	"model_view" 					"viewmodel_quake_axe"
+	"model_world" 					"worldmodel_quake_axe"
+	"joint_attach"					"RL_ATTACHER"
+	"def_dropItem"					"moveable_item_quake_axe"
+	
+	"inv_name"						"Axe"
+	"inv_weapon"					"weapon_quake_axe"
+	"inv_item"						"1"
+	"icon"							"guis/assets/hud/wpn_1"
+	
+	"weapon_scriptobject"			"weapon_quake_axe"
+	"def_melee"						"damage_quake_axe"
+	"melee_distance"				"65"
+	"ammoType"						""
+	"ammoRequired"					"0"
+	"clipSize"						"0"
+	"mtr_flashShader"				""
+	"flashColor"					""
+	"flashRadius"					"0"
+	"silent_fire"					"1"
+	
+	"weaponAngleOffsetAverages" 	"0"
+	"weaponAngleOffsetScale" 		"0"
+	"weaponAngleOffsetMax"			"0"
+	"weaponOffsetTime"				"0"
+	"weaponOffsetScale"				"0"
+
+	"hide_time"						"0.3"		// time to hide weapon when talking to npcs or looking at guis
+	"hide_distance"					"-15"		// distance to offset weapon when talking to npcs or looking at guis
+	
+	"impact_damage_effect"			"1"
+
+	"snd_acquire"					"sound_weapon_acquire"
+	"skin_invisible"				"skins/axe_ros"
+	"snd_firequad"					"player_fire_quad"				
+}
+
+entityDef moveable_item_quake_axe {
+	"inherit"					"weapon_quake_axe"
+	"spawnclass"				"idMoveableItem"
+	"model"						"models/quake/weapons/axe/w_axe.ase"
+	"density"					"0.05"
+	"friction"					"0.2"
+	"bouncyness"				"0"
+}
+
+model viewmodel_quake_axe {
+	mesh							models/quake/md5/weapons/axe_view/viewaxe.md5mesh
+	offset							( -10 0 -6.5 )
+
+	anim raise						models/quake/md5/weapons/axe_view/raise.md5anim {
+		frame	1					sound_weapon quake_axe_raise
+	}
+	anim idle 						models/quake/md5/weapons/axe_view/idle.md5anim
+	anim berserk_idle 				models/quake/md5/weapons/axe_view/axe_idle.md5anim
+	anim aim 						models/quake/md5/weapons/axe_view/idle.md5anim
+	anim punch_left1				models/quake/md5/weapons/axe_view/axe_swing1.md5anim
+	anim punch_left2				models/quake/md5/weapons/axe_view/axe_swing3.md5anim
+	anim punch_right1				models/quake/md5/weapons/axe_view/axe_swing2.md5anim
+	anim punch_right2				models/quake/md5/weapons/axe_view/axe_swing4.md5anim
+	anim putaway 					models/quake/md5/weapons/axe_view/lower.md5anim
+}
+
+entityDef damage_quake_axe {
+	"damage"						"75"
+	
+	"kickDir"						"-1 0 0"
+
+	"mtr_blob"						"genericDamage"
+	"blob_time"						"300"
+	"blob_size"						"400"
+	"blob_offset_x"					"400"
+
+	"knockback"						"20"
+	"push"							"20000"
+
+	"gib"							"1"
+	"smoke_wound_flesh"				"burstysquirt.prt"
+	"mtr_wound_flesh"				"textures/decals/hurt02"
+
+	"kick_time"						"400"
+	"kick_amplitude"				"1"
+
+	"dv_time"						"100"
+	
+	"snd_flesh"						"quake_axe_impact_flesh"
+	"snd_metal"						"quake_axe_impact_metal"
+	"snd_ricochet"					"quake_axe_impact_metal" 
+	"snd_stone"						"quake_axe_impact_metal"
+	"snd_wood"						"quake_axe_impact"
+	"snd_cardboard"					"quake_axe_impact"
+	"snd_glass"						"quake_axe_impact_metal"
+	"snd_plastic"					"quake_axe_impact"
+	"snd_hit"						"quake_axe_impact"
+	"snd_miss"						"quake_axe_whoosh"	
+	"snd_hit_berserk"				"quake_axe_gorepunch"
+}

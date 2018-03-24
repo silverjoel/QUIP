@@ -1,0 +1,176 @@
+/***********************************************************************
+
+ ammo
+
+***********************************************************************/
+
+// Define the types of ammo that are used in the game.
+// This entityDef is required by the game code.
+// Up to 16 ammo types can be defined.
+entityDef ammo_types {
+	"ammo_none"				"0"
+	"ammo_quake_shells"		"1"
+	"ammo_quake_nails"		"2"
+	"ammo_quake_rockets"	"3"
+	"ammo_quake_cells"		"4"
+}
+
+entityDef ammo_names {
+	"ammo_none"				"None"
+	"ammo_quake_shells"		"Shells"
+	"ammo_quake_nails"		"Nails"
+	"ammo_quake_rockets"	"Rockets"
+	"ammo_quake_cells"		"Cells"
+}
+
+entityDef ammo_quake_shells_small {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_rotatable"			"1"
+
+	"editor_usage"				"Quake Shells Small"
+
+	"spawnclass"				"idItem"
+	"model"						"models/quake/items/ammo/shells_small.ase"
+	"snd_acquire"				"sound/quake/items/shells_pickup_small.wav"
+	"size"						"32 32 32"
+	"inv_ammo_quake_shells"		"20"
+	"inv_item"					"4"
+	"inv_name"					"Shells"
+	"editor_copy100"			"inv_item"
+	"snd_respawn"				"sound_item_respawn"
+}
+
+entityDef ammo_quake_shells_large {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_rotatable"			"1"
+
+	"editor_usage"				"Quake Shells Large"
+
+	"spawnclass"				"idItem"
+	"model"						"models/obihb/qammo/qshotgun_shells.ase"
+	"snd_acquire"				"sound/items/shells_pickup_large.wav"
+	"snd_respawn"				"sound_item_respawn"
+	"size"						"32 32 32"
+	"inv_ammo_quake_shells"		"40"
+	"inv_item"					"4"
+	"inv_name"					"Shells"
+	"editor_copy100"			"inv_item"
+}
+
+entityDef ammo_quake_nails_small {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_rotatable"			"1"
+
+	"editor_usage"				"Quake Nails Small"
+
+	"spawnclass"				"idItem"
+	"model"						"models/quake/items/ammo/nails_small.ase"
+	"snd_acquire"				"sound/items/clip_pickup_small.wav"
+	"snd_respawn"				"sound_item_respawn"
+	"size"						"32 32 32"
+	"inv_ammo_quake_nails"		"25"
+	"inv_item"					"4"
+	"inv_name"					"Nails"
+	"editor_copy100"			"inv_item"
+}
+
+entityDef ammo_quake_nails_large {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_rotatable"			"1"
+
+	"editor_usage"				"Quake Nails Large"
+
+	"spawnclass"				"idItem"
+	"model"						"models/obihb/qammo/qnails.ase"
+	"snd_acquire"				"sound/items/clip_pickup_large.wav"
+	"snd_respawn"				"sound_item_respawn"
+	"size"						"32 32 32"
+	"inv_ammo_quake_nails"		"50"
+	"inv_item"					"4"
+	"inv_name"					"Nails"
+	"editor_copy100"			"inv_item"
+}
+
+entityDef ammo_quake_rockets_small {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_rotatable"			"1"
+
+	"editor_usage"				"Quake Rockets Small"
+
+	"spawnclass"				"idItem"
+	"model"						"models/quake/items/ammo/rockets_small.ase"
+	"snd_acquire"				"guisounds_ammo"
+	"snd_respawn"				"sound_item_respawn"
+	"size"						"32 32 32"
+	"inv_ammo_quake_rockets"	"5"
+	"inv_item"					"4"
+	"inv_name"					"Rockets"
+	"editor_copy100"			"inv_item"
+}
+
+entityDef ammo_quake_rockets_large {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_rotatable"			"1"
+
+	"editor_usage"				"Quake Rockets Large"
+
+	"spawnclass"				"idItem"
+	"model"						"models/obihb/qammo/qrockets.ase"
+	"snd_acquire"				"guisounds_ammo"
+	"snd_respawn"				"sound_item_respawn"
+	"size"						"32 32 32"
+	"inv_ammo_quake_rockets"	"10"
+	"inv_item"					"4"
+	"inv_name"					"Rockets"
+	"editor_copy100"			"inv_item"
+}
+
+entityDef ammo_quake_cells_small {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_rotatable"			"1"
+
+	"editor_usage"				"Quake Cells Small"
+	
+	"spawnclass"				"idItem"
+	"model"						"models/quake/items/ammo/cells_small.ase"
+	"snd_acquire"				"guisounds_ammo"
+	"snd_respawn"				"sound_item_respawn"
+	"size"						"32 32 32"
+	"inv_ammo_quake_cells"		"20"
+	"inv_item"					"4"
+	"inv_name"					"Cells"
+	"editor_copy100"			"inv_item"
+}
+
+entityDef ammo_quake_cells_large {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_rotatable"			"1"
+
+	"editor_usage"				"Quake Cells Large"
+
+	"spawnclass"				"idItem"
+	"model"						"models/quake/items/ammo/cells_large.ase"
+	"snd_acquire"				"guisounds_ammo"
+	"snd_respawn"				"sound_item_respawn"
+	"size"						"32 32 32"
+	"inv_ammo_quake_cells"		"35"
+	"inv_item"					"4"
+	"inv_name"					"Cells"
+	"editor_copy100"			"inv_item"
+}

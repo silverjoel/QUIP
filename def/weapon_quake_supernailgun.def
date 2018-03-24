@@ -1,0 +1,169 @@
+
+/***********************************************************************
+
+	weapon_quake_supernailgun.def
+
+***********************************************************************/
+
+entityDef weapon_quake_supernailgun {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_usage"				"Quake Super Nailgun"
+	"editor_rotatable"			"1"
+
+	"spin"						"1"
+
+	"spawnclass"				"idItem"
+	"size"						"32 32 32"
+	"model" 					"models/quake/weapons/supernailgun/w_supernailgun.ase"
+	"model_view" 				"viewmodel_quake_supernailgun"
+	"model_world" 				"worldmodel_quake_supernailgun"
+	"joint_attach"				"RL_ATTACHER"
+//	"def_dropItem"				"moveable_item_quake_supernailgun"
+
+	"inv_name"					""
+	"inv_weapon"				"weapon_quake_supernailgun"
+	"inv_ammo_quake_nails"		"30"
+	"inv_item"					"5"
+	"icon"						"guis/assets/hud/wpn_5"
+
+	"gui"						"guis/weapons/chaingun.gui"
+	"mtr_guiLightShader"		"lights/viewWeaponGuiLight"
+	
+	"weapon_scriptobject"		"weapon_quake_supernailgun"
+	"def_projectile"			"projectile_quake_supernailgun"
+	"ammoType"					"ammo_quake_nails"
+	"ammoRequired"				"1"
+	"clipSize"					"0"
+	"mtr_flashShader"			"muzzleflash"
+	"flashColor"				"1 0.8 0.4"
+	"flashRadius"				"100"
+	"silent_fire"				"0"
+	//"muzzleAxis"				"5 0 0"
+	//"muzzleOrigin"			"15 0 -16.25"
+	"muzzle_kick_time"			"0.5"
+	"muzzle_kick_maxtime"		"0.75"
+	"muzzle_kick_angles"		"-2 0 0"
+	"muzzle_kick_offset"		"5 0 0"
+	//"recoilTime"				"100"
+	//"recoilAngles"			"-1 0 0"
+
+	"hide_time"					"0.3"								// time to hide weapon when talking to npcs or looking at guis
+	"hide_distance"				"-25"								// distance to offset weapon when talking to npcs or looking at guis
+
+	"weaponAngleOffsetAverages" "0"
+	"weaponAngleOffsetScale" 	"0"
+	"weaponAngleOffsetMax"		"0"
+	"weaponOffsetTime"			"0"
+	"weaponOffsetScale"			"0"
+
+	"smoke_wound_metal"			"bulletricochet.prt"
+	"smoke_wound_ricochet"		"bulletricochet.prt"
+
+	"snd_acquire"				"sound_weapon_acquire"
+	"snd_fire"					"player_quake_supernailgun_fire"
+	"snd_firequad"				"player_fire_quad"
+	"snd_winddown"				"player_quake_supernailgun_winddown"
+
+	"skin_invisible"			"skins/quake_supernailgun_ros"
+
+	"spread"					"3"
+}
+
+entityDef moveable_item_quake_supernailgun {
+	"inherit"					"weapon_quake_supernailgun"
+	"spawnclass"				"idMoveableItem"
+	"density"					"0.05"
+	"friction"					"0.2"
+	"bouncyness"				"0"
+}
+
+model viewmodel_quake_supernailgun {
+	mesh 						models/quake/md5/weapons/supernailgun_view/viewsupernailgun.md5mesh
+
+	anim raise					models/quake/md5/weapons/supernailgun_view/raise.md5anim {
+	//	frame	1					sound_body player_quake_supernailgun_raise
+	}
+	anim idle					models/quake/md5/weapons/supernailgun_view/idle.md5anim
+	anim putaway				models/quake/md5/weapons/supernailgun_view/lower.md5anim
+}
+
+entityDef projectile_quake_supernailgun {
+	"spawnclass"				"idProjectile"
+	"mins"						"-3 -3 -6"
+	"maxs"						"3 3 6"
+	"cone"						"3"
+	"model" 					"models/quake/items/ammo/spike.ase"
+
+	"def_damage"				"damage_quake_supernailgun"
+
+	"launchFromBarrel"			"1"					// launch from barrel
+	"health"					"5"					// amount of damage projectile can take if damaged (0 means it can't be destroyed)
+	"velocity"					"1200 0 0"			// how fast the projectile leaves the gun (or distance if fuse is 0)
+	"angular_velocity"			"0 900 0"			// how the projectile is rotating when it leaves the gun
+	"thrust"					"0"					// the rate of acceleration (always in the direction of the projectiles model)
+	"thrust_start"				"0"					// when to start accelerating
+	"thrust_end"				"5"					// when to stop accelerating
+	"linear_friction"			"0"					// "air" friction
+	"angular_friction"			"0"
+	"contact_friction"			"0"
+	"bounce"					"0"					// how much speed a projectile retains when it bounces off of objects (coefficient of restitution).  0 means no bounce.
+	"mass"						"1"
+	"gravity"					"0"					// how much gravity affects the trajectory.  gravity direction is same as the entity that fired it.
+	"fuse"						"10"				// how long before the projectile is removed or self-detonates.  Use 0 for beam weapons (velocity == distance).
+
+	"detonate_on_fuse"			"0"
+	"detonate_on_death"			"0"
+	"detonate_on_world"			"1"
+	"detonate_on_actor"			"1"
+
+	"impact_damage_effect"		"1"
+	"impact_gib"				"1"
+
+	"mtr_detonate"				"textures/decals/bulleth02"
+	"mtr_detonate_glass"		"textures/decals/testbulletglass1"
+	"decal_size"				"10"
+	"model_smokespark"			"bulletsmokeandspark.prt"
+	"model_ricochet"			"bulletricochet.prt"
+
+	"smoke_fly"					""
+	"smoke_detonate"			"smokeandspark.smoke"
+	"smoke_bounce"				""
+	"smoke_fuse"				""
+								
+	"mtr_light_shader"			""
+	"light_color"				"0 0 0"
+	"light_radius"				"0"
+	"light_offset"				"0 0 0"
+
+	"mtr_explode_light_shader"	""
+	"explode_light_color"		"0 0 0"
+	"explode_light_radius"		"0"
+	"explode_light_fadetime"	"0"
+	
+	"snd_tracer"				"bullet_flight"
+	"snd_ricochet"				"bullet_ricochet"
+	"snd_flesh"					"bullet_impact_flesh"
+	"snd_metal"					"bullet_impact_metal"
+	"snd_stone"					"bullet_impact_stone"
+	"snd_wood"					"bullet_impact_wood"
+	"snd_cardboard"				"bullet_impact_cardboard"
+	"snd_glass"					"bullet_impact_glass"
+	"snd_liquid"				"bullet_impact_liquid"
+	"snd_plastic"				"small_plastic"
+}
+
+entityDef	damage_quake_supernailgun {
+	"damage"					"18"
+	
+	"gib"						"1"
+	"smoke_wound_flesh"			"bloodwound.ptr"
+	"mtr_wound_flesh"			"textures/decals/hurt02"
+	"mtr_wound_metal"			"textures/decals/hurtmetal"
+	"mtr_wound_ricochet"		"textures/decals/hurtmetal"
+	"mtr_splat_flesh"			"textures/decals/dsplat2"
+	"mtr_splat_flesh2"			"textures/decals/dsplat5"
+	"mtr_splat_flesh3"			"textures/decals/dsplat7"
+	"mtr_splat_flesh4"			"textures/decals/dsplat11"
+}

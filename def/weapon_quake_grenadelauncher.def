@@ -1,0 +1,168 @@
+/***********************************************************************
+
+	weapon_quake_grenadelauncher.def
+
+***********************************************************************/
+
+entityDef weapon_quake_grenadelauncher {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_usage"				"Quake Grenade Launcher"
+	"editor_rotatable"			"1"
+
+	"spin"						"1"
+
+	"spawnclass"				"idItem"
+	"size"						"32 32 32"
+	"model" 					"models/quake/weapons/grenadelauncher/w_grenadelauncher.ase"
+	"model_view" 				"viewmodel_quake_grenadelauncher"
+	"model_world" 				"worldmodel_quake_grenadelauncher"
+	"joint_attach"				"RL_ATTACHER"
+//	"def_dropItem"				"moveable_item_quake_grenadelauncher"
+
+	"inv_name"					"Grenade Launcher"
+	"inv_weapon"				"weapon_quake_grenadelauncher"
+	"inv_ammo_quake_rockets"	"5"
+	"inv_item"					"6"
+	"icon"						"guis/assets/hud/wpn_6"
+
+	"hide_time"					"0.3"				// time to hide weapon when talking to npcs or looking at guis
+	"hide_distance"				"-20"				// distance to offset weapon when talking to npcs or looking at guis
+
+	"weapon_scriptobject"		"weapon_quake_grenadelauncher"
+	"def_projectile"			"projectile_quake_grenadelauncher"
+	"ammoType"					"ammo_quake_rockets"
+	"ammoRequired"				"1"
+	"clipSize"					"0"
+	"mtr_flashShader"			"muzzleflash"
+	"flashColor"				"1 0.8 0.4"
+	"flashRadius"				"100"
+	"silent_fire"				"0"
+	//"muzzleAxis"				"5 0 0"
+	//"muzzleOrigin"			"15 0 -16.25"
+	"muzzle_kick_time"			"0.5"
+	"muzzle_kick_maxtime"		"0.75"
+	"muzzle_kick_angles"		"-8 0 0"
+	"muzzle_kick_offset"		"15 0 0"
+
+	"weaponAngleOffsetAverages" "0"
+	"weaponAngleOffsetScale" 	"0"
+	"weaponAngleOffsetMax"		"0"
+	"weaponOffsetTime"			"0"
+	"weaponOffsetScale"			"0"
+
+	//"smoke_muzzle"			"rocketmuzzle.prt"
+
+	"snd_acquire"				"sound_weapon_acquire"
+	"snd_fire"					"player_quake_grenadelauncher_fire"
+	"snd_firequad"				"player_fire_quad"
+
+	"skin_invisible"			"skins/quake_grenadelauncher_ros"
+	
+	"spread"					"1"
+}
+
+entityDef moveable_item_quake_grenadelauncher {
+	"inherit"					"weapon_quake_grenadelauncher"
+	"spawnclass"				"idMoveableItem"
+	"density"					"0.05"
+	"friction"					"0.2"
+	"bouncyness"				"0"
+}
+
+model viewmodel_quake_grenadelauncher {
+	mesh						models/quake/md5/weapons/grenadelauncher_view/viewgrenadelauncher.md5mesh
+	
+	anim raise					models/quake/md5/weapons/grenadelauncher_view/raise.md5anim {
+	//	frame 1					sound_body player_quake_grenadelauncher_raise
+	}
+	anim idle 					models/quake/md5/weapons/grenadelauncher_view/idle.md5anim
+	anim putaway				models/quake/md5/weapons/grenadelauncher_view/lower.md5anim 
+}
+
+entityDef projectile_quake_grenadelauncher {
+	"spawnclass"				"idProjectile"
+	"mins"						"-3 -3 0"
+	"maxs"						"3 3 11"
+	"cylinder"					"6"
+	"model" 					"models/weapons/grenades/grenades_world.lwo"	//add quake style
+	"offsetModel"				"0 0 -5"
+
+	"def_damage"				"damage_quake_grenadelauncherDirect"
+	"def_splash_damage"			"damage_quake_grenadelauncherSplash"
+								
+	"launchFromBarrel"			"1"
+	"health"					"0"					// amount of damage projectile can take if damaged (0 means it can't be destroyed)
+	"velocity"					"1000 0 60"			// how fast the projectile leaves the gun (or distance if fuse is 0)
+	"angular_velocity"			"10 0 15"			// how the projectile is rotating when it leaves the gun
+	"thrust"					"0"					// the rate of acceleration (always in the direction of the projectiles model)
+	"thrust_start"				"0"					// when to start accelerating
+	"thrust_end"				"2.5"				// when to stop accelerating
+	"linear_friction"			"0.6"				// "air" friction
+	"angular_friction"			"0"
+	"contact_friction"			"0.1"
+	"bounce"					"0.7"				// how much speed a projectile retains when it bounces off of objects (coefficient of restitution).  0 means no bounce.
+	"mass"						"10"
+	"gravity"					"1066"				// how much gravity affects the trajectory.  gravity direction is same as the entity that fired it.
+	"fuse"						"2"					// how long before the projectile is removed or self-detonates.  Use 0 for beam weapons (velocity == distance).
+						
+	"detonate_on_fuse"			"1"					// whether projectile should detonate when it's fuse runs out
+	"detonate_on_death"			"0"					// whether projectile should detonate when it's "killed" (health runs out)
+	"detonate_on_world"			"0"					// whether projectile should detonate when it hits an obstacle
+	"detonate_on_actor"			"1"					// whether projectile should detonate when it hits a character in the game
+	"detonate_on_trigger"		"1"					// whether projectile should detonate when triggered by a character in the game
+								
+	"impact_damage_effect"		"1"					// whether projectile causes blood splats from characters that bleed
+	"impact_gib"				"1"					// whether projectile can gib a character or not (for example: bullets don't gib, but rockets do)
+
+	"mtr_detonate"				"textures/decals/ballburn01"
+	"decal_size"				"300" 
+
+	"model_detonate"			"grenadeExplosion.prt"			// parametric particles -- temp
+
+	"smoke_fly"					"grenadetrail.prt"			// particle effect while in the air
+	"smoke_detonate"			""						// particle effect when detonates
+	"smoke_residue"				""						// particle effect while in the air
+	"smoke_fuse"				""
+	"smoke_bounce"				"bulletricochet.prt"
+
+	"debris_count"				"6"
+	"def_debris"				"debris_largeshrapnel"
+	"def_shrapnel"				"debris_shrapnel"
+
+	"mtr_light_shader"			""
+	"light_color"				""
+	"light_radius"				""
+	"light_offset"				""
+
+	"mtr_explode_light_shader"	"muzzleflash"
+	"explode_light_color"		"1 0.8 0.4"
+	"explode_light_radius"		"200"
+	"explode_light_fadetime"	"0.25"
+	
+	"detonation_axis"			"0 0 1"
+
+	"snd_impact"				"player_quake_grenadelauncher_bounce"
+	"snd_bounce"				"player_quake_grenadelauncher_bounce"
+	"snd_explode"				"quake_grenadelauncher_impact"
+}
+
+entityDef damage_quake_grenadelauncherDirect {
+	"damage"					"220"
+	"push"						"1000"
+	"mtr_wound_flesh"			"textures/decals/hurt02"
+	"mtr_splat_flesh"			""
+	"gib"						"1"
+	"smoke_wound_flesh"			"bloodwound.prt"
+}
+
+entityDef damage_quake_grenadelauncherSplash {
+	"damage"					"125"
+	"radius"					"125"
+	"knockback"					"75"
+	"push"						"8000"
+	"attackerDamageScale"		"0.2"
+	"attackerPushScale"			"0.2"
+	"gib"						"1"
+}

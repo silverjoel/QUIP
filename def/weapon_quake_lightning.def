@@ -1,0 +1,150 @@
+//QX - Quake
+//Edited - Sept. 12, 2005
+//heXum - Quake
+//Edited - Mar. 14 2007
+/***********************************************************************
+
+	weapon_quake_lightning.def
+
+***********************************************************************/
+
+entityDef weapon_quake_lightning {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_usage"				"Quake Lightning Gun"
+	"editor_rotatable"			"1"
+
+	"spin"						"1"
+
+	"spawnclass"				"idItem"
+	"size"						"32 32 32"
+	"model" 					"models/quake/weapons/lightning/w_lightning.ase"
+	"model_view"				"viewmodel_quake_lightning"
+	"model_world" 				"worldmodel_quake_lightning"
+	"joint_attach"				"pgATTACHER"
+//	"def_dropItem"				"moveable_item_quake_lightning"
+
+	"inv_name"					"Thunderbolt"
+	"inv_weapon"				"weapon_quake_lightning"
+	"inv_ammo_quake_cells"		"50"
+	"inv_item"					"8"
+	"icon"						"guis/assets/hud/wpn_8"
+
+	"weapon_scriptobject"		"weapon_quake_lightning"
+	"def_melee"					"damage_quake_lightning"
+	"def_projectile"			"projectile_quake_lightning"
+	"melee_distance"			"768"
+	"ammoType"					"ammo_quake_cells"
+	"ammoRequired"				"1"
+	"clipSize"					"0"
+	"mtr_flashShader"			"muzzleflash"
+	"flashColor"				"1 1 1"
+	"flashRadius"				"150"
+	"silent_fire"				"0"
+	"gib"						"1"
+
+	//"muzzleOrigin"			"5 -3 0"
+	"muzzle_kick_time"			"0.5"
+	"muzzle_kick_maxtime"		"0.75"
+	"muzzle_kick_angles"		"-2 0 0"
+	"muzzle_kick_offset"		"5 0 0"
+
+	"weaponAngleOffsetAverages"	"0"
+	"weaponAngleOffsetScale" 	"0"
+	"weaponAngleOffsetMax"		"0"
+	"weaponOffsetTime"			"0"
+	"weaponOffsetScale"			"0"
+
+	"impact_damage_effect"		"1"
+	"impact_gib"				"1"
+
+	"smoke_strike"				"chainsawstrike.prt"
+	"mtr_strike"				"textures/decals/ballburn_plasma"
+
+	"hide_time"					"0.3"								// time to hide weapon when talking to npcs or looking at guis
+	"hide_distance"				"-15"								// distance to offset weapon when talking to npcs or looking at guis
+	
+	"snd_acquire"				"sound_weapon_acquire"
+	"snd_fire"					"player_quake_lightning_fire"
+	"snd_firebolt"				"player_quake_lightning_firebolt"
+	"snd_firequad"				"player_fire_quad"
+	"snd_hum"					"player_quake_lightning_idle"
+
+	"skin_invisible"			"skins/quake_lightning_ros"
+}
+
+entityDef moveable_item_quake_lightning {
+	"inherit"					"weapon_quake_lightning"
+	"spawnclass"				"idMoveableItem"
+	"density"					"0.05"
+	"friction"					"0.2"
+	"bouncyness"				"0"
+}
+
+model viewmodel_quake_lightning {
+	mesh 						models/quake/md5/weapons/lightning_view/viewlightning.md5mesh
+	anim raise					models/quake/md5/weapons/lightning_view/raise.md5anim {
+		frame	1				sound_body player_quake_lightning_raise
+	}
+	anim idle 					models/quake/md5/weapons/lightning_view/idle.md5anim
+	anim putaway				models/quake/md5/weapons/lightning_view/lower.md5anim
+}
+
+entityDef projectile_quake_lightning {
+	"spawnclass"				"idProjectile"
+	"mins"						"-1 -1 -1"
+	"maxs"						"1 1 1"
+	"cone"						"3"
+	"scale"						"0.1"
+	"noshadows"					"1"
+
+	"def_damage"				"damage_quake_lightning_none"
+
+	"launchFromBarrel"			"0"
+	"health"					"0"
+	"velocity"					"10000 0 0"	
+	"angular_velocity"			"0 0 0"
+	"thrust"					"0"
+	"thrust_start"				"0"
+	"thrust_end"				"0"
+	"linear_friction"			"0"
+	"angular_friction"			"0"
+	"contact_friction"			"0"
+	"bounce"					"0"
+	"mass"						"1"
+	"gravity"					"0"
+	"fuse"						"1"
+}
+
+entityDef damage_quake_lightning {
+	"damage"					"50"
+	"kickDir"					"1 0 0"
+
+	"mtr_blob"					"genericDamage"
+	"blob_time"					"300"
+	"blob_size"					"400"
+	"blob_offset_x"				"400"
+
+	"knockback"					"40"
+	"push"						"2000"
+
+	"gib"						"1"
+
+	"mtr_wound_flesh"			textures/decals/hurt02"
+	"mtr_splat_flesh"			"textures/decals/dsplat2"
+	"mtr_splat_flesh2"			"textures/decals/dsplat5"
+	"mtr_wound_metal"			"textures/decals/chainsawh02"
+	"mtr_wound_glass"			"textures/decals/chainsawh02"
+
+	"kick_time"					"400"
+	"kick_amplitude"			"1"
+
+	"dv_time"					"100"
+	
+	"snd_hit"					"player_quake_lightning_firebolt"
+}
+
+entityDef damage_quake_lightning_none {
+	"damage"					"0"
+}
