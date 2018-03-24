@@ -1,0 +1,37 @@
+//QX - Quake
+//Edited: Sept. 7, 2005
+
+//Weapon skins. This is for Ring of Shadows.
+
+skin 	skins/quake_axe_ros {
+		models/quake/weapons/axe/axe_quake_tx models/quake/weapons/axe/axe_inv
+		models/weapons/berserk/fist  models/weapons/berserk/fist_invis
+}
+
+skin 	skins/quake_shotgun_ros {
+		models/quake/weapons/shotgun/quake_shotgun_tx models/quake/weapons/shotgun/quake_shotgun_inv
+}
+
+skin 	skins/quake_supershotgun_ros {
+		models/quake/weapons/supershotgun/quake_supershotgun_tx models/quake/weapons/supershotgun/quake_supershotgun_inv
+}
+
+skin 	skins/quake_nailgun_ros {
+		models/quake/weapons/nailgun/quake_nailgun_tx models/quake/weapons/nailgun/quake_nailgun_inv
+}
+
+skin 	skins/quake_supernailgun_ros {
+		models/quake/weapons/supernailgun/quake_supernailgun_tx models/quake/weapons/supernailgun/quake_supernailgun_inv
+}
+
+skin 	skins/quake_grenadelauncher_ros {
+		models/quake/weapons/grenadelauncher/quake_grenadelauncher_tx models/quake/weapons/grenadelauncher/quake_grenadelauncher_inv
+}
+
+skin 	skins/quake_rocketlauncher_ros {
+		models/quake/weapons/rocketlauncher/quake_rocketlauncher_tx models/quake/weapons/rocketlauncher/quake_rocketlauncher_inv
+}
+
+skin 	skins/quake_lightning_ros {
+		models/quake/weapons/lightning/quake_lightning_tx models/quake/weapons/lightning/quake_lightning_inv
+}

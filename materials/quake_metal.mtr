@@ -1,0 +1,364 @@
+//////////////////////////////////////////////
+//quake_metal
+//////////////////////////////////////////////
+
+
+textures/quake_metal/metal01_1
+{
+	qer_editorimage 	textures/quake_metal/metal01_1
+	diffusemap			textures/quake_metal/metal01_1
+	bumpmap 			textures/quake_metal/metal01_1_norm
+}
+
+textures/quake_metal/metal01_2
+{
+	qer_editorimage 	textures/quake_metal/metal01_2
+	diffusemap			textures/quake_metal/metal01_2
+	bumpmap 			textures/quake_metal/metal01_2_norm
+}
+
+textures/quake_metal/metal01_3
+{
+	qer_editorimage 	textures/quake_metal/metal01_3
+	diffusemap			textures/quake_metal/metal01_3
+	bumpmap 			textures/quake_metal/metal01_3_norm
+}
+
+textures/quake_metal/metal01_4
+{
+	qer_editorimage 	textures/quake_metal/metal01_4
+	diffusemap			textures/quake_metal/metal01_4
+	bumpmap 			textures/quake_metal/metal01_4_norm
+}
+
+textures/quake_metal/metal01_5
+{
+	qer_editorimage 	textures/quake_metal/metal01_5
+	diffusemap			textures/quake_metal/metal01_5
+	bumpmap 			textures/quake_metal/metal01_5_norm
+}
+
+textures/quake_metal/metal01_6
+{
+	qer_editorimage 	textures/quake_metal/metal01_6
+	diffusemap			textures/quake_metal/metal01_6
+	bumpmap 			textures/quake_metal/metal01_6_norm
+}
+
+textures/quake_metal/metal01_7
+{
+	qer_editorimage 	textures/quake_metal/metal01_7
+	diffusemap			textures/quake_metal/metal01_7
+	bumpmap 			textures/quake_metal/metal01_7_norm
+}
+
+textures/quake_metal/metal01_8
+{
+	qer_editorimage 	textures/quake_metal/metal01_8
+	diffusemap			textures/quake_metal/metal01_8
+	bumpmap 			textures/quake_metal/metal01_8_norm
+}
+
+textures/quake_metal/metal01_9
+{
+	qer_editorimage 	textures/quake_metal/metal01_9
+	diffusemap			textures/quake_metal/metal01_9
+	bumpmap 			textures/quake_metal/metal01_9_norm
+}
+
+textures/quake_metal/metal02_1
+{
+	qer_editorimage 	textures/quake_metal/metal02_1
+	diffusemap			textures/quake_metal/metal02_1
+	bumpmap 			textures/quake_metal/metal02_1_norm
+}
+
+textures/quake_metal/metal02_2
+{
+	qer_editorimage 	textures/quake_metal/metal02_2
+	diffusemap			textures/quake_metal/metal02_2
+	bumpmap 			textures/quake_metal/metal02_2_norm
+}
+
+textures/quake_metal/metal02_3
+{
+	qer_editorimage 	textures/quake_metal/metal02_3
+	diffusemap			textures/quake_metal/metal02_3
+	bumpmap 			textures/quake_metal/metal02_3_norm
+}
+
+textures/quake_metal/metal02_4
+{
+	qer_editorimage 	textures/quake_metal/metal02_4
+	diffusemap			textures/quake_metal/metal02_4
+	bumpmap 			textures/quake_metal/metal02_4_norm
+}
+
+textures/quake_metal/metal02_5
+{
+	qer_editorimage 	textures/quake_metal/metal02_5
+	diffusemap			textures/quake_metal/metal02_5
+	bumpmap 			textures/quake_metal/metal02_5_norm
+}
+
+textures/quake_metal/metal02_6
+{
+	qer_editorimage 	textures/quake_metal/metal02_6
+	diffusemap			textures/quake_metal/metal02_6
+	bumpmap 			textures/quake_metal/metal02_6_norm
+}
+
+textures/quake_metal/metal02_7
+{
+	qer_editorimage 	textures/quake_metal/metal02_7
+	diffusemap			textures/quake_metal/metal02_7
+	bumpmap 			textures/quake_metal/metal02_7_norm
+}
+
+textures/quake_metal/metal03_1
+{
+	qer_editorimage 	textures/quake_metal/metal03_1
+	diffusemap			textures/quake_metal/metal03_1
+	bumpmap 			textures/quake_metal/metal03_1_norm
+}
+
+textures/quake_metal/metal03_2
+{
+	qer_editorimage 	textures/quake_metal/metal03_2
+	diffusemap			textures/quake_metal/metal03_2
+	bumpmap 			textures/quake_metal/metal03_2_norm
+}
+
+textures/quake_metal/metal03_3
+{
+	qer_editorimage 	textures/quake_metal/metal03_3
+	diffusemap			textures/quake_metal/metal03_3
+	bumpmap 			textures/quake_metal/metal03_3_norm
+}
+
+textures/quake_metal/metal03_4
+{
+	qer_editorimage 	textures/quake_metal/metal03_4
+	diffusemap			textures/quake_metal/metal03_4
+	bumpmap 			textures/quake_metal/metal03_4_norm
+}
+
+textures/quake_metal/metal03_5
+{
+	qer_editorimage 	textures/quake_metal/metal03_5
+	diffusemap			textures/quake_metal/metal03_5
+	bumpmap 			textures/quake_metal/metal03_5_norm
+}
+
+textures/quake_metal/metal03_6
+{
+	qer_editorimage 	textures/quake_metal/metal03_6
+	diffusemap			textures/quake_metal/metal03_6
+	bumpmap 			textures/quake_metal/metal03_6_norm
+}
+
+textures/quake_metal/metal03_7
+{
+	qer_editorimage 	textures/quake_metal/metal03_7
+	diffusemap			textures/quake_metal/metal03_7
+	bumpmap 			textures/quake_metal/metal03_7_norm
+}
+
+textures/quake_metal/metal03_8
+{
+	qer_editorimage 	textures/quake_metal/metal03_8
+	diffusemap			textures/quake_metal/metal03_8
+	bumpmap 			textures/quake_metal/metal03_8_norm
+}
+
+textures/quake_metal/metal04_1
+{
+	qer_editorimage 	textures/quake_metal/metal04_1
+	diffusemap			textures/quake_metal/metal04_1
+	bumpmap 			textures/quake_metal/metal04_1_norm
+}
+
+textures/quake_metal/metal04_2
+{
+	qer_editorimage 	textures/quake_metal/metal04_2
+	diffusemap			textures/quake_metal/metal04_2
+	bumpmap 			textures/quake_metal/metal04_2_norm
+}
+
+textures/quake_metal/metal04_3
+{
+	qer_editorimage 	textures/quake_metal/metal04_3
+	diffusemap			textures/quake_metal/metal04_3
+	bumpmap 			textures/quake_metal/metal04_3_norm
+}
+
+textures/quake_metal/metal04_4
+{
+	qer_editorimage 	textures/quake_metal/metal04_4
+	diffusemap			textures/quake_metal/metal04_4
+	bumpmap 			textures/quake_metal/metal04_4_norm
+}
+
+textures/quake_metal/metal04_5
+{
+	qer_editorimage 	textures/quake_metal/metal04_5
+	diffusemap			textures/quake_metal/metal04_5
+	bumpmap 			textures/quake_metal/metal04_5_norm
+}
+
+textures/quake_metal/metal04_6
+{
+	qer_editorimage 	textures/quake_metal/metal04_6
+	diffusemap			textures/quake_metal/metal04_6
+	bumpmap 			textures/quake_metal/metal04_6_norm
+}
+
+textures/quake_metal/metal04_7
+{
+	qer_editorimage 	textures/quake_metal/metal04_7
+	diffusemap			textures/quake_metal/metal04_7
+	bumpmap 			textures/quake_metal/metal04_7_norm
+}
+
+textures/quake_metal/metal04_8
+{
+	qer_editorimage 	textures/quake_metal/metal04_8
+	diffusemap			textures/quake_metal/metal04_8
+	bumpmap 			textures/quake_metal/metal04_8_norm
+}
+
+textures/quake_metal/metal04_9
+{
+	qer_editorimage 	textures/quake_metal/metal04_9
+	diffusemap			textures/quake_metal/metal04_9
+	bumpmap 			textures/quake_metal/metal04_9_norm
+}
+
+textures/quake_metal/metal05_1
+{
+	qer_editorimage 	textures/quake_metal/metal05_1
+	diffusemap			textures/quake_metal/metal05_1
+	bumpmap 			textures/quake_metal/metal05_1_norm
+}
+
+textures/quake_metal/metal05_2
+{
+	qer_editorimage 	textures/quake_metal/metal05_2
+	diffusemap			textures/quake_metal/metal05_2
+	bumpmap 			textures/quake_metal/metal05_2_norm
+}
+
+textures/quake_metal/metal05_3
+{
+	qer_editorimage 	textures/quake_metal/metal05_3
+	diffusemap			textures/quake_metal/metal05_3
+	bumpmap 			textures/quake_metal/metal05_3_norm
+}
+
+textures/quake_metal/metal05_4
+{
+	qer_editorimage 	textures/quake_metal/metal05_4
+	diffusemap			textures/quake_metal/metal05_4
+	bumpmap 			textures/quake_metal/metal05_4_norm
+}
+
+textures/quake_metal/metal05_5
+{
+	qer_editorimage 	textures/quake_metal/metal05_5
+	diffusemap			textures/quake_metal/metal05_5
+	bumpmap 			textures/quake_metal/metal05_5_norm
+}
+
+textures/quake_metal/metal05_6
+{
+	qer_editorimage 	textures/quake_metal/metal05_6
+	diffusemap			textures/quake_metal/metal05_6
+	bumpmap 			textures/quake_metal/metal05_6_norm
+}
+
+textures/quake_metal/metal05_7
+{
+	qer_editorimage 	textures/quake_metal/metal05_7
+	diffusemap			textures/quake_metal/metal05_7
+	bumpmap 			textures/quake_metal/metal05_7_norm
+}
+
+textures/quake_metal/metal06_1
+{
+	qer_editorimage 	textures/quake_metal/metal06_1
+	diffusemap			textures/quake_metal/metal06_1
+	bumpmap 			textures/quake_metal/metal06_1_norm
+}
+
+textures/quake_metal/metal06_2
+{
+	qer_editorimage 	textures/quake_metal/metal06_2
+	diffusemap			textures/quake_metal/metal06_2
+	bumpmap 			textures/quake_metal/metal06_2_norm
+}
+
+textures/quake_metal/metal06_3
+{
+	qer_editorimage 	textures/quake_metal/metal06_3
+	diffusemap			textures/quake_metal/metal06_3
+	bumpmap 			textures/quake_metal/metal06_3_norm
+}
+
+textures/quake_metal/metal06_4
+{
+	qer_editorimage 	textures/quake_metal/metal06_4
+	diffusemap			textures/quake_metal/metal06_4
+	bumpmap 			textures/quake_metal/metal06_4_norm
+}
+
+textures/quake_metal/metal06_5
+{
+	qer_editorimage 	textures/quake_metal/metal06_5
+	diffusemap			textures/quake_metal/metal06_5
+	bumpmap 			textures/quake_metal/metal06_5_norm
+}
+
+textures/quake_metal/metal06_6
+{
+	qer_editorimage 	textures/quake_metal/metal06_6
+	diffusemap			textures/quake_metal/metal06_6
+	bumpmap 			textures/quake_metal/metal06_6_norm
+}
+
+textures/quake_metal/metal07_1
+{
+	qer_editorimage 	textures/quake_metal/metal07_1
+	diffusemap			textures/quake_metal/metal07_1
+	bumpmap 			textures/quake_metal/metal07_1_norm
+}
+
+textures/quake_metal/metal07_2
+{
+	qer_editorimage 	textures/quake_metal/metal07_2
+	diffusemap			textures/quake_metal/metal07_2
+	bumpmap 			textures/quake_metal/metal07_2_norm
+}
+
+textures/quake_metal/metal07_3
+{
+	qer_editorimage 	textures/quake_metal/metal07_3
+	diffusemap			textures/quake_metal/metal07_3
+	bumpmap 			textures/quake_metal/metal07_3_norm
+}
+
+textures/quake_metal/metal07_4
+{
+	qer_editorimage 	textures/quake_metal/metal07_4
+	diffusemap			textures/quake_metal/metal07_4
+	bumpmap 			textures/quake_metal/metal07_4_norm
+}
+
+textures/quake_metal/metal07_5
+{
+	qer_editorimage 	textures/quake_metal/metal07_5
+	diffusemap			textures/quake_metal/metal07_5
+	bumpmap 			textures/quake_metal/metal07_5_norm
+}
+
+
+

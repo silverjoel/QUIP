@@ -1,0 +1,32 @@
+//////////////////////////////////////////////
+//quake_lgmetal
+//////////////////////////////////////////////
+
+
+textures/quake_lgmetal/lgmetal1
+{
+	qer_editorimage 	textures/quake_lgmetal/lgmetal1
+	diffusemap			textures/quake_lgmetal/lgmetal1
+	bumpmap 			textures/quake_lgmetal/lgmetal1_norm
+}
+
+textures/quake_lgmetal/lgmetal2
+{
+	qer_editorimage 	textures/quake_lgmetal/lgmetal2
+	diffusemap			textures/quake_lgmetal/lgmetal2
+	bumpmap 			textures/quake_lgmetal/lgmetal2_norm
+}
+
+textures/quake_lgmetal/lgmetal3
+{
+	qer_editorimage 	textures/quake_lgmetal/lgmetal3
+	diffusemap			textures/quake_lgmetal/lgmetal3
+	bumpmap 			textures/quake_lgmetal/lgmetal3_norm
+}
+
+textures/quake_lgmetal/lgmetal4
+{
+	qer_editorimage 	textures/quake_lgmetal/lgmetal4
+	diffusemap			textures/quake_lgmetal/lgmetal4
+	bumpmap 			textures/quake_lgmetal/lgmetal4_norm
+}

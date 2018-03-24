@@ -1,0 +1,138 @@
+//////////////////////////////////////////////
+//misc_rune
+//////////////////////////////////////////////
+
+
+textures/misc_rune/lrune01
+{
+	qer_editorimage 	textures/misc_rune/lrune01
+	diffusemap			textures/misc_rune/lrune01
+	bumpmap 			textures/misc_rune/lrune01_norm
+}
+
+textures/misc_rune/lrune02
+{
+	qer_editorimage 	textures/misc_rune/lrune02
+	diffusemap			textures/misc_rune/lrune02
+	bumpmap 			textures/misc_rune/lrune02_norm
+}
+
+textures/misc_rune/rune01
+{
+	qer_editorimage 	textures/misc_rune/rune01
+	diffusemap			textures/misc_rune/rune01
+	bumpmap 			textures/misc_rune/rune01_norm
+}
+
+textures/misc_rune/rune01r
+{
+	qer_editorimage 	textures/misc_rune/rune01r
+	diffusemap			textures/misc_rune/rune01r
+	bumpmap 			textures/misc_rune/rune01_norm			
+	{
+		blend	add
+		map				textures/misc_rune/rune01r_luma
+	}
+}
+
+textures/misc_rune/rune02
+{
+	qer_editorimage 	textures/misc_rune/rune02
+	diffusemap			textures/misc_rune/rune02
+	bumpmap 			textures/misc_rune/rune02_norm
+}
+
+textures/misc_rune/rune02r
+{
+	qer_editorimage 	textures/misc_rune/rune02r
+	diffusemap			textures/misc_rune/rune02r
+	bumpmap 			textures/misc_rune/rune02_norm
+	{
+		blend	add
+		map				textures/misc_rune/rune02r_luma
+	}
+}
+
+textures/misc_rune/rune03
+{
+	qer_editorimage 	textures/misc_rune/rune03
+	diffusemap			textures/misc_rune/rune03
+	bumpmap 			textures/misc_rune/rune03_norm
+}
+
+textures/misc_rune/rune03r
+{
+	qer_editorimage 	textures/misc_rune/rune03r
+	diffusemap			textures/misc_rune/rune03r
+	bumpmap 			textures/misc_rune/rune03_norm
+	{
+		blend	add
+		map				textures/misc_rune/rune03r_luma
+	}
+}
+
+textures/misc_rune/rune04
+{
+	qer_editorimage 	textures/misc_rune/rune04
+	diffusemap			textures/misc_rune/rune04
+	bumpmap 			textures/misc_rune/rune04_norm
+}
+
+textures/misc_rune/rune04r
+{
+	qer_editorimage 	textures/misc_rune/rune04r
+	diffusemap			textures/misc_rune/rune04r
+	bumpmap 			textures/misc_rune/rune04_norm
+	{
+		blend	add
+		map				textures/misc_rune/rune04r_luma
+	}
+}
+
+textures/misc_rune/rune05
+{
+	qer_editorimage 	textures/misc_rune/rune05
+	diffusemap			textures/misc_rune/rune05
+	bumpmap 			textures/misc_rune/rune05_norm
+}
+
+textures/misc_rune/rune06
+{
+	qer_editorimage 	textures/misc_rune/rune06
+	diffusemap			textures/misc_rune/rune06
+	bumpmap 			textures/misc_rune/rune06_norm
+}
+
+textures/misc_rune/rune07r
+{
+	qer_editorimage 	textures/misc_rune/rune07r
+	diffusemap			textures/misc_rune/rune07r
+	bumpmap 			textures/misc_rune/rune07_norm
+	{
+		blend	add
+		map				textures/misc_rune/rune07r_luma
+	}
+}
+
+textures/misc_rune/rune08r
+{
+	qer_editorimage 	textures/misc_rune/rune08r
+	diffusemap			textures/misc_rune/rune08r
+	bumpmap 			textures/misc_rune/rune08_norm
+	{
+		blend	add
+		map				textures/misc_rune/rune08r_luma
+	}
+}
+
+textures/misc_rune/rune09r
+{
+	qer_editorimage 	textures/misc_rune/rune09r
+	diffusemap			textures/misc_rune/rune09r
+	bumpmap 			textures/misc_rune/rune09_norm
+	{
+		blend	add
+		map				textures/misc_rune/rune09r_luma
+	}
+}
+

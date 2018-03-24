@@ -1,0 +1,29 @@
+//////////////////////////////////////////////
+//liquid
+//////////////////////////////////////////////
+
+lights/ambient_full
+{
+	ambientLight
+	lightFalloffImage makeintensity( lights/full.tga )  //_noFalloff // by default, stay bright almost all the way to the end
+	{ 
+		forceHighQuality 
+		map lights/full.tga
+		colored 
+		zeroclamp 
+	}
+}
+
+
+
+lights/window03_3_light
+{
+	qer_editorimage 	lights/window/window03_3_light
+
+	{
+		forceHighQuality
+		map	lights/window/window03_3_light
+		zeroClamp
+		colored
+	}
+}

@@ -1,0 +1,171 @@
+//////////////////////////////////////////////
+//quake_light
+//////////////////////////////////////////////
+
+
+textures/quake_light/light01
+{
+	qer_editorimage 	textures/quake_light/light01a
+	
+	
+	{
+		if ( ( time * 4 ) % 3 == 0 )
+		blend	filter
+		map		textures/quake_light/light01a
+	}
+	{
+		if ( ( time * 4 ) % 3 == 1 )
+		blend	filter
+		map		textures/quake_light/light01b
+	}
+	{
+		if ( ( time * 4 ) % 3 == 2 )
+		blend	filter
+		map		textures/quake_light/light01c
+	}
+	
+	bumpmap 			textures/quake_light/light01_norm
+}
+
+textures/quake_light/light1_1
+{
+	qer_editorimage 	textures/quake_light/light1_1
+	diffusemap 			textures/quake_light/light1_1
+	bumpmap 			textures/quake_light/light1_1_norm
+	{
+		blend add
+		map				textures/quake_light/light1_1_luma
+	}
+}
+
+textures/quake_light/light1_2
+{
+	qer_editorimage 	textures/quake_light/light1_2
+	diffusemap 			textures/quake_light/light1_2
+	bumpmap 			textures/quake_light/light1_2_norm
+	{
+		blend add
+		map				textures/quake_light/light1_2_luma
+	}
+}
+
+textures/quake_light/light1_3
+{
+	qer_editorimage 	textures/quake_light/light1_3
+	diffusemap 			textures/quake_light/light1_3
+	bumpmap 			textures/quake_light/light1_3_norm
+	{
+		blend add
+		map				textures/quake_light/light1_3_luma
+	}
+}
+
+textures/quake_light/light1_4
+{
+	qer_editorimage 	textures/quake_light/light1_4
+	diffusemap 			textures/quake_light/light1_4
+	bumpmap 			textures/quake_light/light1_4_norm
+	{
+		blend add
+		map				textures/quake_light/light1_4_luma
+	}
+}
+
+textures/quake_light/light1_4l
+{
+	{
+		forceHighQuality
+		map textures/quake_light/light1_4_luma
+		colored
+		zeroclamp
+	}
+}
+
+textures/quake_light/light1_5
+{
+	qer_editorimage 	textures/quake_light/light1_5
+	diffusemap 			textures/quake_light/light1_5
+	bumpmap 			textures/quake_light/light1_5_norm
+	{
+		blend add
+		map				textures/quake_light/light1_5_luma
+	}
+}
+
+textures/quake_light/light1_7
+{
+	qer_editorimage 	textures/quake_light/light1_7
+	diffusemap 			textures/quake_light/light1_7
+	bumpmap 			textures/quake_light/light1_7_norm
+	{
+		blend add
+		map				textures/quake_light/light1_7_luma
+	}
+}
+
+textures/quake_light/light3_3
+{
+	qer_editorimage 	textures/quake_light/light3_3
+	diffusemap 			textures/quake_light/light3_3
+	bumpmap 			textures/quake_light/light3_3_norm
+	{
+		blend add
+		map				textures/quake_light/light3_3_luma
+	}
+}
+
+textures/quake_light/light3_5
+{
+	qer_editorimage 	textures/quake_light/light3_5
+	diffusemap 			textures/quake_light/light3_5
+	bumpmap 			textures/quake_light/light3_5_norm
+	{
+		blend add
+		map				textures/quake_light/light3_5_luma
+	}
+}
+
+textures/quake_light/light3_6
+{
+	qer_editorimage 	textures/quake_light/light3_6
+	diffusemap 			textures/quake_light/light3_6
+	bumpmap 			textures/quake_light/light3_6_norm
+	{
+		blend add
+		map				textures/quake_light/light3_6_luma
+	}
+}
+
+textures/quake_light/light3_6l
+{
+	{
+		forceHighQuality
+		map textures/quake_light/light3_6_luma
+		colored
+		zeroclamp
+	}
+}
+
+textures/quake_light/light3_7
+{
+	qer_editorimage 	textures/quake_light/light3_7
+	diffusemap 			textures/quake_light/light3_7
+	bumpmap 			textures/quake_light/light3_7_norm
+	{
+		blend add
+		map				textures/quake_light/light3_7_luma
+	}
+}
+
+textures/quake_light/light3_8
+{
+	qer_editorimage 	textures/quake_light/light3_8
+	diffusemap 			textures/quake_light/light3_8
+	bumpmap 			textures/quake_light/light3_8_norm
+	{
+		blend add
+		map				textures/quake_light/light3_8_luma
+	}
+}
+
+

@@ -1,0 +1,205 @@
+/***********************************************************************
+
+weapon_quake_supernailgun.script
+
+***********************************************************************/
+
+#define QUAKE_SUPERNAILGUN_FIRE_SKIPFRAMES      7	
+#define QUAKE_SUPERNAILGUN_NUMPROJECTILES		1
+#define QUAKE_SUPERNAILGUN_BARREL_SPEED		( 70 * ( GAME_FPS / QUAKE_SUPERNAILGUN_FIRE_SKIPFRAMES ) )
+#define QUAKE_SUPERNAILGUN_BARREL_ACCEL_TIME	0.001
+#define QUAKE_SUPERNAILGUN_BARREL_DECCEL_TIME	1.0
+#define QUAKE_SUPERNAILGUN_BARREL_ACCEL		( QUAKE_SUPERNAILGUN_BARREL_SPEED / QUAKE_SUPERNAILGUN_BARREL_ACCEL_TIME )
+#define QUAKE_SUPERNAILGUN_BARREL_DECCEL		( QUAKE_SUPERNAILGUN_BARREL_SPEED / QUAKE_SUPERNAILGUN_BARREL_DECCEL_TIME )
+
+// blend times
+#define QUAKE_SUPERNAILGUN_IDLE_TO_LOWER		0
+#define QUAKE_SUPERNAILGUN_IDLE_TO_FIRE		0
+#define QUAKE_SUPERNAILGUN_RAISE_TO_IDLE		0
+#define QUAKE_SUPERNAILGUN_WINDDOWN_TO_IDLE	0	
+
+object weapon_quake_supernailgun : weapon_base {
+	entity	world_model;
+	float		world_barrel_joint;
+	float		barrel_joint;
+	float		barrel_angle;
+	float		current_rate;
+	float		start_rate;
+	float		end_rate;
+	float		spin_start;
+	float		spin_end;
+
+	float		next_attack;
+	float		spread;
+	
+	void		init();
+
+	void		UpdateBarrel();
+	void		SpinUp();
+	void		SpinDown();
+	
+	void		Lower();
+	void		Raise();
+	void		Idle();
+	void		Fire();
+	void		ExitCinematic();
+};
+
+void weapon_quake_supernailgun::init() {
+	world_model			= getWorldModel();
+	world_barrel_joint 	= world_model.getJointHandle( "toob" );
+	barrel_joint		= getJointHandle( "spinner" );
+	barrel_angle		= 0;
+	current_rate		= 0;
+	start_rate			= 0;
+	end_rate			= 0;
+	spin_start			= 0;
+	spin_end			= 0;
+	next_attack 		= 0;
+	spread			= getFloatKey( "spread" );
+	weaponState			( "Raise", 0 );
+}
+
+void weapon_quake_supernailgun::UpdateBarrel() {
+	float currentTime;
+	float t;
+	vector ang;
+	
+	currentTime = sys.getTime();
+	if ( currentTime < spin_end ) {
+		t = ( currentTime - spin_start ) / ( spin_end - spin_start );
+		current_rate = start_rate + t * ( end_rate - start_rate );
+	} else {
+		current_rate = end_rate;
+	}
+	
+	if ( current_rate ) {
+		barrel_angle = barrel_angle + current_rate * GAME_FRAMETIME * -1;
+		
+		ang_x = 0;
+		ang_y = 0;
+		ang_z = barrel_angle;	
+		setJointAngle( barrel_joint, JOINTMOD_LOCAL, ang );
+
+		ang_y = barrel_angle;
+		ang_z = 0;
+		world_model.setJointAngle( world_barrel_joint, JOINTMOD_LOCAL, ang );	
+	}
+}
+
+void weapon_quake_supernailgun::SpinUp() {
+	start_rate = current_rate;
+	end_rate = QUAKE_SUPERNAILGUN_BARREL_SPEED;
+	spin_start = sys.getTime();
+	spin_end = spin_start + ( end_rate - current_rate ) / QUAKE_SUPERNAILGUN_BARREL_ACCEL;
+	//startSound( "snd_windup", SND_CHANNEL_BODY3, false );
+}
+
+void weapon_quake_supernailgun::SpinDown() {
+	start_rate = current_rate;
+	end_rate = 0;
+	spin_start = sys.getTime();
+	spin_end = spin_start + ( current_rate - end_rate ) / QUAKE_SUPERNAILGUN_BARREL_DECCEL;
+	startSound( "snd_winddown", SND_CHANNEL_BODY3, false );
+}
+
+void weapon_quake_supernailgun::Raise() {
+	weaponRising();
+	playAnim( ANIMCHANNEL_ALL, "raise" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, QUAKE_SUPERNAILGUN_RAISE_TO_IDLE ) );
+	weaponState( "Idle", QUAKE_SUPERNAILGUN_RAISE_TO_IDLE );
+}
+
+void weapon_quake_supernailgun::Lower() {
+	weaponLowering();
+	playAnim( ANIMCHANNEL_ALL, "putaway" );
+
+	while( !animDone( ANIMCHANNEL_ALL, 0 ) ) {
+		UpdateBarrel();
+		waitFrame();
+	}
+
+	weaponHolstered();
+	waitUntil( WEAPON_RAISEWEAPON );
+	weaponState( "Raise", 0 );
+}
+
+void weapon_quake_supernailgun::Idle() {
+	float currentTime;
+	float ammoClip;
+	float avail;
+	float clip_size;
+	
+	clip_size = clipSize();	
+	
+	if ( !ammoAvailable() = 0) {
+		weaponOutOfAmmo();
+	} else {
+		weaponReady();
+	}
+
+	while( 1 ) {
+		if ( WEAPON_LOWERWEAPON ) {
+			weaponState( "Lower", QUAKE_SUPERNAILGUN_IDLE_TO_LOWER );
+		}
+		currentTime = sys.getTime();
+		ammoClip = ammoAvailable();
+		if ( ( currentTime >= next_attack ) && WEAPON_ATTACK ) {
+			if ( ammoClip > 0 ) {
+				weaponState( "Fire", SHOTGUN_IDLE_TO_FIRE );
+			}
+		}
+		waitFrame();
+		UpdateBarrel();
+	}
+}
+
+void weapon_quake_supernailgun::Fire() {
+	float ammoClip;
+	float currentTime;
+	float skip;
+
+	SpinUp();
+	ammoClip = ammoAvailable();
+	while( ( current_rate < end_rate ) && WEAPON_ATTACK && ( ammoClip > 0 ) ) {
+		UpdateBarrel();
+		waitFrame();
+		ammoClip = ammoAvailable();
+	}
+		
+	startSound( "snd_spin", SND_CHANNEL_BODY3, false );
+	ammoClip = ammoAvailable();
+	while( WEAPON_ATTACK && ( ammoClip > 0 ) ) {
+		launchProjectiles( QUAKE_SUPERNAILGUN_NUMPROJECTILES, spread, 0, 1.0, 1.0 );
+		startSound( "snd_fire", SND_CHANNEL_BODY, false );
+		
+		//if ( isQuad() ) {
+		//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+		//	startSound( "snd_firequad", SND_CHANNEL_BODY2, false );
+		//} else {
+		//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+		//}
+
+		ammoClip = ammoAvailable();
+
+		// skip frames
+		for( skip = 0; skip < QUAKE_SUPERNAILGUN_FIRE_SKIPFRAMES; skip++ ) {
+			UpdateBarrel();
+			waitFrame();
+		}
+	}
+
+	SpinDown();
+	weaponState( "Idle", QUAKE_SUPERNAILGUN_WINDDOWN_TO_IDLE );
+}
+
+void weapon_quake_supernailgun::ExitCinematic() {
+	current_rate	= 0;
+	start_rate		= 0;
+	end_rate		= 0;
+	spin_start		= 0;
+	spin_end		= 0;
+	next_attack 	= 0;
+
+	weaponState( "Idle", 0 );
+}

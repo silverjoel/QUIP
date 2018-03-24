@@ -1,0 +1,48 @@
+//////////////////////////////////////////////
+//liquid
+//////////////////////////////////////////////
+
+textures/test/123
+{
+
+	qer_editorimage 	textures/test/123
+//	diffusemap 			textures/test/123
+	noShadows
+	twoSided
+	{
+		blend			diffusemap
+		map				textures/test/123
+		alphatest		.5
+	}
+}
+
+textures/test/base1
+{
+
+	qer_editorimage 	textures/test/base1
+	diffusemap 			textures/test/base1
+	bumpmap 			textures/test/base1_norm
+	specularmap 		textures/test/base1_gloss
+}
+
+textures/test/wall1
+{
+
+	qer_editorimage 	textures/test/wall1
+	diffusemap 			textures/test/wall1
+	bumpmap 			textures/test/wall1_norm
+	specularmap 		textures/test/wall1_gloss
+//	{
+//		blend add
+//		map				textures/liquid/lava01_luma
+//	}
+}
+
+textures/test/wall2
+{
+
+	qer_editorimage 	textures/wall2
+	diffusemap 			textures/wall2
+	bumpmap 			textures/wall2_normal
+	specularmap 		textures/wall2_height
+}

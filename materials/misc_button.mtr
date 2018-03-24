@@ -1,0 +1,212 @@
+//////////////////////////////////////////////
+//misc_button
+//////////////////////////////////////////////
+
+table buttontable2 { snap { 0, 1 } }
+table buttontable3r { snap { 0, 1, 2, 1 } }
+table buttontable4 { snap { 0, 1, 2, 3 } }
+table buttontable4r { snap { 0, 1, 2, 3, 2, 1 } }
+
+
+textures/misc_button/button01
+{
+	noSelfShadow
+
+	qer_editorimage 	textures/misc_button/button01
+	diffusemap 			textures/misc_button/button01
+	
+	{
+		if ( parm7 == 0 )
+		blend add
+		map 			textures/misc_button/button01_luma
+		scale 1 / 2 , 1
+		scroll buttontable2[ time  ] , 0
+		clamp
+	}
+	{
+		if ( parm7 == 1 )
+		blend	add
+		map				textures/misc_button/button01a_luma
+	}
+	
+	bumpmap 			textures/misc_button/button01_norm
+	specularmap 		textures/misc_button/button01_gloss
+}
+
+textures/misc_button/button02
+{
+	noSelfShadow
+	
+	qer_editorimage 	textures/misc_button/button02
+	diffusemap 			textures/misc_button/button02
+	
+	{
+		if ( parm7 == 0 )
+		blend add
+		map 			textures/misc_button/button02_luma
+		scale 1 / 3 , 1
+		scroll buttontable3r[ time  ] , 0
+		clamp
+	}
+	{
+		if ( parm7 == 1 )
+		blend	add
+		map				textures/misc_button/button02a_luma
+	}
+	
+	bumpmap 			textures/misc_button/button02_norm
+}
+
+textures/misc_button/button03
+{
+	noSelfShadow
+	qer_editorimage 	textures/misc_button/button02
+	diffusemap 			textures/misc_button/button02
+	
+	{
+		if ( parm7 == 0 )
+		blend add
+		map 			textures/misc_button/button03_luma
+		scale 1 / 3 , 1
+		scroll buttontable3r[ time  ] , 0
+		clamp
+	}
+	{
+		if ( parm7 == 1 )
+		blend	add
+		map				textures/misc_button/button02a_luma
+	}
+	
+	bumpmap 			textures/misc_button/button02_norm
+}
+
+textures/misc_button/button04
+{
+	noSelfShadow
+	
+	qer_editorimage 	textures/misc_button/button04
+	diffusemap 			textures/misc_button/button04
+	
+	{
+		if ( parm7 == 0 )
+		blend add
+		map				textures/misc_button/button04_luma
+		scale 1 / 3 , 1
+		scroll buttontable3r[ time  ] , 0
+		clamp
+	}
+	
+	bumpmap 			textures/misc_button/button04_norm
+}
+
+
+textures/misc_button/button05
+{
+	noSelfShadow
+
+	qer_editorimage 	textures/misc_button/button05
+	diffusemap 			textures/misc_button/button05
+	
+	{
+		if ( parm7 == 0 )
+		blend add
+		map 			textures/misc_button/button05_luma
+		scale 1 / 4 , 1
+		scroll buttontable4[ time  ] , 0
+		clamp
+	}
+	
+	bumpmap 			textures/misc_button/button05_norm
+}
+
+textures/misc_button/button06
+{
+	noSelfShadow
+	
+	qer_editorimage 	textures/misc_button/button06
+	diffusemap 			textures/misc_button/button06
+	
+	{
+		if ( parm7 == 0 )
+		blend add
+		map 			textures/misc_button/button06_luma
+		scale 1 / 3 , 1
+		scroll buttontable3r[ time  ] , 0
+		clamp
+	}
+	
+	bumpmap 			textures/misc_button/button06_norm
+}
+
+textures/misc_button/button07
+{
+	noSelfShadow
+	
+	qer_editorimage 	textures/misc_button/button07
+	diffusemap 			textures/misc_button/button07
+	
+	{
+		if ( parm7 == 0 )
+		blend add
+		map 			textures/misc_button/button07_luma
+		scale 1 / 4 , 1
+		scroll buttontable4r[ time  ] , 0
+		clamp
+	}
+	
+	bumpmap 			textures/misc_button/button07_norm
+}
+
+textures/misc_button/switch01
+{
+	noSelfShadow
+	
+	qer_editorimage 	textures/misc_button/switch01
+	diffusemap			textures/misc_button/switch01
+	bumpmap 			textures/misc_button/switch01_norm
+	specularmap 		textures/misc_button/switch01_gloss
+	{
+		blend	add
+		map				textures/misc_button/switch01_luma
+	}
+}
+
+textures/misc_button/switch02
+{
+	noSelfShadow
+	
+	qer_editorimage 	textures/misc_button/switch02
+	diffusemap			textures/misc_button/switch02
+	bumpmap 			textures/misc_button/switch02_norm
+}
+
+textures/misc_button/switch03
+{
+	noSelfShadow
+	
+	qer_editorimage 	textures/misc_button/switch03
+	diffusemap			textures/misc_button/switch03
+	bumpmap 			textures/misc_button/switch03_norm
+}
+
+textures/misc_button/switch04
+{
+	noSelfShadow
+	
+	qer_editorimage 	textures/misc_button/switch04
+	diffusemap			textures/misc_button/switch04
+	bumpmap 			textures/misc_button/switch04_norm
+}
+
+textures/misc_button/switch05
+{
+	noSelfShadow
+	
+	qer_editorimage 	textures/misc_button/switch05
+	diffusemap			textures/misc_button/switch05
+	bumpmap 			textures/misc_button/switch05_norm
+	{
+		blend	add
+		map				textures/misc_button/switch05_luma
+	}
+}

@@ -1,0 +1,87 @@
+//////////////////////////////////////////////
+//quake_wall
+//////////////////////////////////////////////
+
+textures/quake_wall/column01_1
+{
+	qer_editorimage 	textures/quake_wall/column01_1
+	diffusemap			textures/quake_wall/column01_1
+	bumpmap 			textures/quake_wall/column01_1_norm
+}
+
+textures/quake_wall/column01_2
+{
+	qer_editorimage 	textures/quake_wall/column01_2
+	diffusemap			textures/quake_wall/column01_2
+	bumpmap 			textures/quake_wall/column01_2_norm
+}
+
+textures/quake_wall/column01_3
+{
+	qer_editorimage 	textures/quake_wall/column01_3
+	diffusemap			textures/quake_wall/column01_3
+	bumpmap 			textures/quake_wall/column01_3_norm
+}
+
+textures/quake_wall/column01_4
+{
+	qer_editorimage 	textures/quake_wall/column01_4
+	diffusemap			textures/quake_wall/column01_4
+	bumpmap 			textures/quake_wall/column01_4_norm
+}
+
+textures/quake_wall/column01_5
+{
+	qer_editorimage 	textures/quake_wall/column01_5
+	diffusemap			textures/quake_wall/column01_5
+	bumpmap 			textures/quake_wall/column01_5_norm
+}
+
+textures/quake_wall/wall01_1
+{
+	qer_editorimage 	textures/quake_wall/wall01_1
+	diffusemap			textures/quake_wall/wall01_1
+	bumpmap 			textures/quake_wall/wall01_1_norm
+}
+
+textures/quake_wall/wall01_2
+{
+	qer_editorimage 	textures/quake_wall/wall01_2
+	diffusemap			textures/quake_wall/wall01_2
+	bumpmap 			textures/quake_wall/wall01_2_norm
+}
+
+textures/quake_wall/wall01_3
+{
+	qer_editorimage 	textures/quake_wall/wall01_3
+	diffusemap			textures/quake_wall/wall01_3
+	bumpmap 			textures/quake_wall/wall01_3_norm
+}
+
+textures/quake_wall/wall01_4
+{
+	qer_editorimage 	textures/quake_wall/wall01_4
+	diffusemap			textures/quake_wall/wall01_4
+	bumpmap 			textures/quake_wall/wall01_4_norm
+}
+
+textures/quake_wall/wall01_5
+{
+	qer_editorimage 	textures/quake_wall/wall01_5
+	diffusemap			textures/quake_wall/wall01_5
+	bumpmap 			textures/quake_wall/wall01_5_norm
+}
+
+textures/quake_wall/wall01_6
+{
+	qer_editorimage 	textures/quake_wall/wall01_6
+	diffusemap			textures/quake_wall/wall01_6
+	bumpmap 			textures/quake_wall/wall01_6_norm
+}
+
+textures/quake_wall/wall01_7
+{
+	qer_editorimage 	textures/quake_wall/wall01_7
+	diffusemap			textures/quake_wall/wall01_7
+	bumpmap 			textures/quake_wall/wall01_7_norm
+}

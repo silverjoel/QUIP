@@ -1,0 +1,210 @@
+//////////////////////////////////////////////
+//quake_city
+//////////////////////////////////////////////
+
+
+textures/quake_city/city1_4
+{
+	qer_editorimage 	textures/quake_city/city1_4
+	diffusemap			textures/quake_city/city1_4
+	bumpmap 			textures/quake_city/city1_4_norm
+}
+
+textures/quake_city/city1_7
+{
+	qer_editorimage 	textures/quake_city/city1_7
+	diffusemap			textures/quake_city/city1_7
+	bumpmap 			textures/quake_city/city1_7_norm
+}
+
+textures/quake_city/city2_1
+{
+	qer_editorimage 	textures/quake_city/city2_1
+	diffusemap			textures/quake_city/city2_1
+	bumpmap 			textures/quake_city/city2_1_norm
+}
+
+textures/quake_city/city2_2
+{
+	qer_editorimage 	textures/quake_city/city2_2
+	diffusemap			textures/quake_city/city2_2
+	bumpmap 			textures/quake_city/city2_2_norm
+}
+
+textures/quake_city/city2_3
+{
+	qer_editorimage 	textures/quake_city/city2_3
+	diffusemap			textures/quake_city/city2_3
+	bumpmap 			textures/quake_city/city2_3_norm
+}
+
+textures/quake_city/city2_5
+{
+	qer_editorimage 	textures/quake_city/city2_5
+	diffusemap			textures/quake_city/city2_5
+	bumpmap 			textures/quake_city/city2_5_norm
+}
+
+textures/quake_city/city2_6
+{
+	qer_editorimage 	textures/quake_city/city2_6
+	diffusemap			textures/quake_city/city2_6
+	bumpmap 			textures/quake_city/city2_6_norm
+}
+
+textures/quake_city/city2_7
+{
+	qer_editorimage 	textures/quake_city/city2_7
+	diffusemap			textures/quake_city/city2_7
+	bumpmap 			textures/quake_city/city2_7_norm
+}
+
+textures/quake_city/city2_8
+{
+	qer_editorimage 	textures/quake_city/city2_8
+	diffusemap			textures/quake_city/city2_8
+	bumpmap 			textures/quake_city/city2_8_norm
+}
+
+textures/quake_city/city3_2
+{
+	qer_editorimage 	textures/quake_city/city3_2
+	diffusemap			textures/quake_city/city3_2
+	bumpmap 			textures/quake_city/city3_2_norm
+}
+
+textures/quake_city/city3_4
+{
+	qer_editorimage 	textures/quake_city/city3_4
+	diffusemap			textures/quake_city/city3_4
+	bumpmap 			textures/quake_city/city3_4_norm
+}
+
+textures/quake_city/city4_1
+{
+	qer_editorimage 	textures/quake_city/city4_1
+	diffusemap			textures/quake_city/city4_1
+	bumpmap 			textures/quake_city/city4_1_norm
+}
+
+textures/quake_city/city4_2
+{
+	qer_editorimage 	textures/quake_city/city4_2
+	diffusemap			textures/quake_city/city4_2
+	bumpmap 			textures/quake_city/city4_2_norm
+}
+
+textures/quake_city/city4_5
+{
+	qer_editorimage 	textures/quake_city/city4_5
+	diffusemap			textures/quake_city/city4_5
+	bumpmap 			textures/quake_city/city4_5_norm
+}
+
+textures/quake_city/city4_6
+{
+	qer_editorimage 	textures/quake_city/city4_6
+	diffusemap			textures/quake_city/city4_6
+	bumpmap 			textures/quake_city/city4_6_norm
+}
+
+textures/quake_city/city4_7
+{
+	qer_editorimage 	textures/quake_city/city4_7
+	diffusemap			textures/quake_city/city4_7
+	bumpmap 			textures/quake_city/city4_7_norm
+}
+
+textures/quake_city/city4_8
+{
+	qer_editorimage 	textures/quake_city/city4_8
+	diffusemap			textures/quake_city/city4_8
+	bumpmap 			textures/quake_city/city4_8_norm
+}
+
+textures/quake_city/city5_1
+{
+	qer_editorimage 	textures/quake_city/city5_1
+	diffusemap			textures/quake_city/city5_1
+	bumpmap 			textures/quake_city/city5_1_norm
+}
+
+textures/quake_city/city5_2
+{
+	qer_editorimage 	textures/quake_city/city5_2
+	diffusemap			textures/quake_city/city5_2
+	bumpmap 			textures/quake_city/city5_2_norm
+}
+
+textures/quake_city/city5_3
+{
+	qer_editorimage 	textures/quake_city/city5_3
+	diffusemap			textures/quake_city/city5_3
+	bumpmap 			textures/quake_city/city5_3_norm
+}
+
+textures/quake_city/city5_4
+{
+	qer_editorimage 	textures/quake_city/city5_4
+	diffusemap			textures/quake_city/city5_4
+	bumpmap 			textures/quake_city/city5_4_norm
+}
+
+textures/quake_city/city5_6
+{
+	qer_editorimage 	textures/quake_city/city5_6
+	diffusemap			textures/quake_city/city5_6
+	bumpmap 			textures/quake_city/city5_6_norm
+}
+
+textures/quake_city/city5_7
+{
+	qer_editorimage 	textures/quake_city/city5_7
+	diffusemap			textures/quake_city/city5_7
+	bumpmap 			textures/quake_city/city5_7_norm
+}
+
+textures/quake_city/city5_8
+{
+	qer_editorimage 	textures/quake_city/city5_8
+	diffusemap			textures/quake_city/city5_8
+	bumpmap 			textures/quake_city/city5_8_norm
+}
+
+textures/quake_city/city6_3
+{
+	qer_editorimage 	textures/quake_city/city6_3
+	diffusemap			textures/quake_city/city6_3
+	bumpmap 			textures/quake_city/city6_3_norm
+}
+
+textures/quake_city/city6_4
+{
+	qer_editorimage 	textures/quake_city/city6_4
+	diffusemap			textures/quake_city/city6_4
+	bumpmap 			textures/quake_city/city6_4_norm
+}
+
+textures/quake_city/city6_7
+{
+	qer_editorimage 	textures/quake_city/city6_7
+	diffusemap			textures/quake_city/city6_7
+	bumpmap 			textures/quake_city/city6_7_norm
+}
+
+textures/quake_city/city6_8
+{
+	qer_editorimage 	textures/quake_city/city6_8
+	diffusemap			textures/quake_city/city6_8
+	bumpmap 			textures/quake_city/city6_8_norm
+}
+
+textures/quake_city/city8_2
+{
+	qer_editorimage 	textures/quake_city/city8_2
+	diffusemap			textures/quake_city/city8_2
+	bumpmap 			textures/quake_city/city8_2_norm
+}
+
+
+

@@ -1,0 +1,13 @@
+//////////////////////////////////////////////
+//quake_common
+//////////////////////////////////////////////
+
+
+textures/quake_common/red
+{
+	qer_editorimage 	textures/quake_altar/altar1_1
+	diffusemap			textures/quake_altar/altar1_1
+	bumpmap 			textures/quake_altar/altar1_1_norm
+}
+
+

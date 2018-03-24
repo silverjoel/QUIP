@@ -1,0 +1,201 @@
+//////////////////////////////////////////////
+//liquid
+//////////////////////////////////////////////
+
+textures/liquid/lavacaulk
+{
+	liquid
+	water
+	translucent
+	nonsolid
+
+	qer_editorimage 	textures/liquid/lavacaulk
+}
+
+textures/liquid/slimecaulk
+{
+	liquid
+	water
+	translucent
+	nonsolid
+
+	qer_editorimage 	textures/liquid/slimecaulk
+}
+
+textures/liquid/watercaulk
+{
+	liquid
+	water
+	translucent
+	nonsolid
+
+	qer_editorimage 	textures/liquid/watercaulk
+}
+
+textures/liquid/lava01
+{
+	liquid
+	water
+	translucent
+	nonsolid
+
+	qer_editorimage 	textures/liquid/lava01
+	diffusemap 			textures/liquid/lava01
+	deform turbulent sinTable 0.0175 (time*0.15) 10
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 1.5
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/liquid/lava01.tga
+	}
+	{
+		blend	diffusemap
+		map		textures/liquid/lava01.tga
+		translate	time * 0.1 , time * 0.2
+		alpha 0.99
+	}
+
+//	{
+//		blend	specularmap
+//		map		textures/liquid/slime01.tga
+//		translate	time * 0.1 , time * 0.2
+//	}
+}
+textures/liquid/slime01
+{
+	liquid
+	water
+	translucent
+//	deform move (time * 0.5)
+
+	qer_editorimage 	textures/liquid/slime01
+	diffusemap 			textures/liquid/slime01
+	{
+		blend add
+		map				textures/liquid/slime01_luma
+	}
+}
+
+textures/liquid/slime02
+{
+	liquid
+	water
+	translucent
+//	deform move (time * 0.5)
+
+	qer_editorimage 	textures/liquid/slime02
+	diffusemap 			textures/liquid/slime02
+	{
+		blend add
+		map				textures/liquid/slime01_luma
+	}
+}
+
+textures/liquid/teleport01
+{
+	liquid
+//	translucent
+//	twoSided
+
+	qer_editorimage 	textures/liquid/teleport01
+//	diffusemap 			textures/liquid/teleport01
+//	{
+//		blend add
+//		map				textures/liquid/teleport01
+//	}
+	{
+		blend	diffusemap
+		map		textures/liquid/teleport01
+		rotate	time * 0.01
+	}
+}
+
+textures/liquid/water01
+{
+	liquid
+	water
+	translucent
+	deform move (time * 0.5)
+
+	qer_editorimage 	textures/liquid/water01
+	diffusemap 			textures/liquid/water01
+	
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 1.5
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/liquid/water01.tga
+	}
+//	{
+//		blend      diffusemap
+//		map   textures/liquid/water01
+//		translate   1,   0
+//	}
+//	{
+//		mirrorRenderMap		512 512		// size of the texture to draw the mirror view in
+//		blend	blend
+
+		// tint
+//		red		0.5
+//		green	0.5
+//		blue	0.5
+
+		// opacity
+//		alpha	0.7
+
+		// fix up the projection
+//		translate	0.5 , 0.5
+//		scale	0.5 , 0.5
+
+	
+//	}
+
+}
+
+textures/liquid/water02
+{
+	liquid
+	water
+	translucent
+
+	qer_editorimage 	textures/liquid/water02
+	diffusemap 			textures/liquid/water02
+	{
+		vertexProgram heatHazeWithMask.vfp
+		vertexParm 0 time * 0.1 , time * 0.5
+		vertexParm 1 1.5
+		fragmentProgram heatHazeWithMask.vfp
+		fragmentMap 0 _currentRender
+		fragmentMap 1 textures/sfx/vp1.tga
+		fragmentMap 2 textures/liquid/water02.tga
+	}
+}
+
+textures/liquid/water03
+{
+	liquid
+	water
+	translucent
+
+	qer_editorimage 	textures/liquid/water03
+	diffusemap 			textures/liquid/water03
+//	{
+//		blend	blend
+//		mirrorRenderMap	512	256
+
+//		translate	0.5, 0.5
+//		scale		0.5, 0.5
+
+//		program	fresnel.vfp
+//		vertexParm	0	.0200593122
+//		fragmentMap	0	_scratch
+//	}
+
+}
+

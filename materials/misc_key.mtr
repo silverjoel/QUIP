@@ -1,0 +1,93 @@
+//////////////////////////////////////////////
+//misc_key
+//////////////////////////////////////////////
+
+
+textures/misc_key/keyg01
+{
+	qer_editorimage 	textures/misc_key/keyg01
+	diffusemap			textures/misc_key/keyg01
+	bumpmap 			textures/misc_key/keyg01_norm
+	{
+		blend	add
+		map				textures/misc_key/keyg01_luma
+	}
+}
+
+textures/misc_key/keyg02
+{
+	qer_editorimage 	textures/misc_key/keyg02
+	diffusemap			textures/misc_key/keyg02
+	bumpmap 			textures/misc_key/keyg02_norm
+	{
+		blend	add
+		map				textures/misc_key/keyg02_luma
+	}
+}
+
+textures/misc_key/keyg03
+{
+	qer_editorimage 	textures/misc_key/keyg03
+	diffusemap			textures/misc_key/keyg03
+	bumpmap 			textures/misc_key/keyg03_norm
+	{
+		blend	add
+		map				textures/misc_key/keyg03_luma
+	}
+}
+
+textures/misc_key/keys01
+{
+	qer_editorimage 	textures/misc_key/keys01
+	diffusemap			textures/misc_key/keys01
+	bumpmap 			textures/misc_key/keys01_norm
+	{
+		blend	add
+		map				textures/misc_key/keys01_luma
+	}
+}
+
+textures/misc_key/keys02
+{
+	qer_editorimage 	textures/misc_key/keys02
+	diffusemap			textures/misc_key/keys02
+	bumpmap 			textures/misc_key/keys02_norm
+	{
+		blend	add
+		map				textures/misc_key/keys02_luma
+	}
+}
+
+textures/misc_key/keys03
+{
+	qer_editorimage 	textures/misc_key/keys03
+	diffusemap			textures/misc_key/keys03
+	bumpmap 			textures/misc_key/keys03_norm
+	{
+		blend	add
+		map				textures/misc_key/keys03_luma
+	}
+}
+
+textures/misc_key/kwall01
+{
+	qer_editorimage 	textures/misc_key/kwall01
+	diffusemap			textures/misc_key/kwall01
+	bumpmap 			textures/misc_key/kwall01_norm
+}
+
+textures/misc_key/kwall02
+{
+	qer_editorimage 	textures/misc_key/kwall02
+	diffusemap			textures/misc_key/kwall02
+	bumpmap 			textures/misc_key/kwall02_norm
+}
+
+textures/misc_key/kwall03
+{
+	qer_editorimage 	textures/misc_key/kwall03
+	diffusemap			textures/misc_key/kwall03
+	bumpmap 			textures/misc_key/kwall03_norm
+}
+
+

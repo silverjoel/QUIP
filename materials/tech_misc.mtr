@@ -1,0 +1,73 @@
+//////////////////////////////////////////////
+//tech_misc
+//////////////////////////////////////////////
+
+table qtable4 { snap { 0, 1, 2, 3 } }
+
+textures/tech_misc/edoor01_1
+{
+	qer_editorimage 	textures/tech_misc/edoor01_1
+	diffusemap 			textures/tech_misc/edoor01_1
+	bumpmap 			textures/tech_misc/edoor01_1_norm
+}
+
+textures/tech_misc/planet
+{
+	qer_editorimage 	textures/tech_misc/planet
+	diffusemap 			textures/tech_misc/planet
+	{
+		blend add
+		map 			textures/tech_misc/planet_luma
+		scale 1 / 4 , 1
+		scroll buttontable4[ time  ] , 0
+	//	clamp
+	}
+	bumpmap 			textures/tech_misc/planet_norm
+	specularmap			textures/tech_misc/planet_gloss
+}
+
+textures/tech_misc/switch_1
+{
+	qer_editorimage 	textures/tech_misc/switch_1
+	diffusemap 			textures/tech_misc/switch_1
+	bumpmap 			textures/tech_misc/switch_1_norm
+	specularmap			textures/tech_misc/switch_1_gloss
+	{
+		blend add
+		map				textures/tech_misc/switch_1_luma
+	}
+}
+
+textures/tech_misc/tele_top
+{
+	qer_editorimage 	textures/tech_misc/tele_top
+	diffusemap 			textures/tech_misc/tele_top
+	bumpmap 			textures/tech_misc/tele_top_norm
+	{
+		blend add
+		map				textures/tech_misc/tele_top_luma
+	}
+}
+
+textures/tech_misc/tmet
+{
+	qer_editorimage 	textures/tech_misc/tmet
+	diffusemap 			textures/tech_misc/tmet
+	bumpmap 			textures/tech_misc/tmet_norm
+	{
+		blend add
+		map				textures/tech_misc/tmet_luma
+	}
+}
+
+textures/tech_misc/z_exit
+{
+	qer_editorimage 	textures/tech_misc/z_exit
+	diffusemap 			textures/tech_misc/z_exit
+	bumpmap 			textures/tech_misc/z_exit_norm
+	{
+		blend add
+		map				textures/tech_misc/z_exit_luma
+	}
+}
+

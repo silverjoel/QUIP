@@ -1,0 +1,113 @@
+/***********************************************************************
+
+weapon_quake_lightning.script
+
+***********************************************************************/
+
+#define QUAKE_LIGHTNING_FIRERATE			0.125
+
+#define QUAKE_LIGHTNING_NUMPROJECTILES		1
+
+// blend times
+#define QUAKE_LIGHTNING_IDLE_TO_LOWER		0
+#define QUAKE_LIGHTNING_IDLE_TO_FIRE		0
+#define QUAKE_LIGHTNING_RAISE_TO_IDLE		0
+#define QUAKE_LIGHTNING_FIRE_TO_IDLE		0
+
+object weapon_quake_lightning : weapon_base {
+	float		next_attack;
+	float		spread;
+	
+	void		init();
+	
+	void		Lower();
+	void		Raise();
+	void		Idle();
+	void		Fire();
+	void		ExitCinematic();
+};
+
+void weapon_quake_lightning::init() {
+	next_attack 	= 0;
+	weaponState		( "Raise", 0 );
+}
+
+void weapon_quake_lightning::Raise() {
+	weaponRising();
+	playAnim( ANIMCHANNEL_ALL, "raise" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, QUAKE_LIGHTNING_RAISE_TO_IDLE ) );
+	weaponState( "Idle", QUAKE_LIGHTNING_RAISE_TO_IDLE );
+}
+
+void weapon_quake_lightning::Lower() {
+	weaponLowering();
+	playAnim( ANIMCHANNEL_ALL, "putaway" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, 0 ) );
+	weaponHolstered();
+	waitUntil( WEAPON_RAISEWEAPON );
+	weaponState( "Raise", 0 );
+}
+
+void weapon_quake_lightning::Idle() {
+	float currentTime;
+	float ammoClip;
+	float avail;
+	float clip_size;
+	
+	clip_size = clipSize();
+
+	if ( !ammoAvailable() = 0) {
+		weaponOutOfAmmo();
+	} else {
+		weaponReady();
+	}
+	
+	playCycle( ANIMCHANNEL_ALL, "idle" );
+	while( 1 ) {
+		if ( WEAPON_LOWERWEAPON ) {
+			weaponState( "Lower", QUAKE_LIGHTNING_IDLE_TO_LOWER );
+		}
+		currentTime = sys.getTime();
+		ammoClip = ammoAvailable();
+		if ( ( currentTime >= next_attack ) && WEAPON_ATTACK ) {
+			if ( ammoClip > 0 ) {
+				weaponState( "Fire", QUAKE_LIGHTNING_IDLE_TO_FIRE );
+			}
+		}
+		waitFrame();
+	}
+}
+
+void weapon_quake_lightning::Fire() {
+	float ammoClip;
+	float currentTime;
+
+	ammoClip = ammoInClip();
+
+	next_attack = sys.getTime() + QUAKE_LIGHTNING_FIRERATE;
+	
+	launchProjectiles( QUAKE_LIGHTNING_NUMPROJECTILES, spread, 0, 1.0, 1.0 );
+	melee();
+	
+	//if ( isQuad() ) {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY2, false );
+	//	startSound( "snd_firequad", SND_CHANNEL_BODY3, false );
+	//} else {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY2, false );
+	//}
+
+	while( !animDone( ANIMCHANNEL_ALL, QUAKE_LIGHTNING_FIRE_TO_IDLE ) ) {
+		currentTime = sys.getTime();
+		if ( ( currentTime >= next_attack ) && WEAPON_ATTACK && ( ammoClip > 0 ) ) {
+			weaponState( "Fire", 0 );
+		}
+		waitFrame();
+	}
+	waitUntil( animDone( ANIMCHANNEL_ALL, 0 ) );
+	weaponState( "Idle", QUAKE_LIGHTNING_FIRE_TO_IDLE );
+}
+
+void weapon_quake_lightning::ExitCinematic() {
+	next_attack = 0;
+	weaponState( "Idle", 0 );
+}

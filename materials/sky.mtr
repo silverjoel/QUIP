@@ -1,0 +1,38 @@
+//////////////////////////////////////////////
+//sky
+//////////////////////////////////////////////
+
+textures/sky/sky01
+{
+	noFragment
+	noshadows
+	nooverlays
+	noimpact
+	forceOpaque				// so transparent windows can draw on top of it
+	qer_editorimage	env/sky01_up
+	
+	{
+		blend			add		// so transparent windows can draw on top of it
+		cameraCubeMap	env/sky01
+		texgen			skybox
+		//texgen			wobblesky .05 .05 .05
+	}
+}
+
+textures/sky/sky04
+{
+	noFragment
+	noshadows
+	nooverlays
+	noimpact
+	forceOpaque				// so transparent windows can draw on top of it
+	qer_editorimage	env/sky04_up
+	
+	{
+		blend			add		// so transparent windows can draw on top of it
+		cameraCubeMap	env/sky04
+		texgen			skybox
+		//texgen			wobblesky .05 .05 .05
+	}
+}
+

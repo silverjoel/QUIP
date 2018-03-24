@@ -1,0 +1,92 @@
+//////////////////////////////////////////////
+//quake_misc
+//////////////////////////////////////////////
+
+
+textures/quake_misc/arrow01
+{
+	qer_editorimage 	textures/quake_misc/arrow01
+	diffusemap			textures/quake_misc/arrow01
+	bumpmap 			textures/quake_misc/arrow01_norm
+}
+
+textures/quake_misc/bwall01
+{
+	qer_editorimage 	textures/quake_misc/bwall01
+	diffusemap			textures/quake_misc/bwall01
+	bumpmap 			textures/quake_misc/bwall01_norm
+}
+
+textures/quake_misc/bwall02
+{
+	qer_editorimage 	textures/quake_misc/bwall02
+	diffusemap			textures/quake_misc/bwall02
+	bumpmap 			textures/quake_misc/bwall02_norm
+}
+
+textures/quake_misc/bwall03
+{
+	qer_editorimage 	textures/quake_misc/bwall03
+	diffusemap			textures/quake_misc/bwall03
+	bumpmap 			textures/quake_misc/bwall03_norm
+}
+
+textures/quake_misc/bwall04
+{
+	qer_editorimage 	textures/quake_misc/bwall04
+	diffusemap			textures/quake_misc/bwall04
+	bumpmap 			textures/quake_misc/bwall04_norm
+}
+
+textures/quake_misc/crucified
+{
+	qer_editorimage 	textures/quake_misc/crucified
+	diffusemap			textures/quake_misc/crucified
+	bumpmap 			textures/quake_misc/crucified_norm
+	{
+		blend	add
+		map				textures/quake_misc/crucified_luma
+	}
+}
+
+textures/quake_misc/dem1_1
+{
+	qer_editorimage 	textures/quake_misc/dem1_1
+	diffusemap			textures/quake_misc/dem1_1
+	bumpmap 			textures/quake_misc/dem1_1_norm
+}
+
+textures/quake_misc/dem1_2
+{
+	qer_editorimage 	textures/quake_misc/dem1_2
+	diffusemap			textures/quake_misc/dem1_2
+	bumpmap 			textures/quake_misc/dem1_2_norm
+}
+
+textures/quake_misc/dem1_3
+{
+	qer_editorimage 	textures/quake_misc/dem1_3
+	diffusemap			textures/quake_misc/dem1_3
+	bumpmap 			textures/quake_misc/dem1_3_norm
+	specularmap			textures/quake_misc/dem1_3_gloss
+}
+
+textures/quake_misc/dem1_4
+{
+	qer_editorimage 	textures/quake_misc/dem1_4
+	diffusemap			textures/quake_misc/dem1_4
+	bumpmap 			textures/quake_misc/dem1_4_norm
+	{
+		blend	add
+		map				textures/quake_misc/dem1_4_luma
+	}
+}
+
+textures/quake_misc/dem2_1
+{
+	qer_editorimage 	textures/quake_misc/dem2_1
+	diffusemap			textures/quake_misc/dem2_1
+	bumpmap 			textures/quake_misc/dem2_1_norm
+}
+
+

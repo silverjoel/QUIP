@@ -1,0 +1,43 @@
+//////////////////////////////////////////////
+//rygel_base
+//////////////////////////////////////////////
+
+textures/rygel_base/base_ceil1
+{
+	qer_editorimage 	textures/rygel_base/base_ceil1
+	diffusemap			textures/rygel_base/base_ceil1
+	bumpmap 			textures/rygel_base/base_ceil1_norm
+	specularmap 		textures/rygel_base/base_ceil1_gloss
+}
+
+textures/rygel_base/c_met14_1
+{
+	qer_editorimage 	textures/rygel_base/c_met14_1
+	diffusemap			textures/rygel_base/c_met14_1
+	bumpmap 			textures/rygel_base/c_met14_1_norm
+	specularmap 		textures/rygel_base/c_met14_1_gloss
+}
+
+textures/rygel_base/lunflr1
+{
+	qer_editorimage 	textures/rygel_base/lunflr1
+	diffusemap			textures/rygel_base/lunflr1
+	bumpmap 			textures/rygel_base/lunflr1_norm
+	specularmap 		textures/rygel_base/lunflr1_gloss
+}
+
+textures/rygel_base/m5_2
+{
+	qer_editorimage 	textures/rygel_base/m5_2
+	diffusemap			textures/rygel_base/m5_2
+	bumpmap 			textures/rygel_base/m5_2_norm
+	specularmap 		textures/rygel_base/m5_2_gloss
+}
+
+textures/rygel_base/qtex08
+{
+	qer_editorimage 	textures/rygel_base/qtex08
+	diffusemap			textures/rygel_base/qtex08
+	bumpmap 			textures/rygel_base/qtex08_norm
+	specularmap 		textures/rygel_base/qtex08_gloss
+}

@@ -1,0 +1,187 @@
+//////////////////////////////////////////////
+//quake_stone
+//////////////////////////////////////////////
+
+
+textures/quake_stone/stone01_1
+{
+	qer_editorimage 	textures/quake_stone/stone01_1
+	diffusemap			textures/quake_stone/stone01_1
+	bumpmap 			textures/quake_stone/stone01_1_norm
+	{
+		blend	add
+		map				textures/quake_stone/stone01_1_gloss
+	}
+}
+
+textures/quake_stone/stone01_2
+{
+	qer_editorimage 	textures/quake_stone/stone01_2
+	diffusemap			textures/quake_stone/stone01_2
+	bumpmap 			textures/quake_stone/stone01_2_norm
+}
+
+textures/quake_stone/stone01_3
+{
+	qer_editorimage 	textures/quake_stone/stone01_3
+	diffusemap			textures/quake_stone/stone01_3
+	bumpmap 			textures/quake_stone/stone01_3_norm
+}
+
+textures/quake_stone/stone01_4
+{
+	qer_editorimage 	textures/quake_stone/stone01_4
+	diffusemap			textures/quake_stone/stone01_4
+	bumpmap 			textures/quake_stone/stone01_4_norm
+}
+
+textures/quake_stone/stone02_1
+{
+	qer_editorimage 	textures/quake_stone/stone02_1
+	diffusemap			textures/quake_stone/stone02_1
+	bumpmap 			textures/quake_stone/stone02_1_norm
+}
+
+textures/quake_stone/stone02_2
+{
+	qer_editorimage 	textures/quake_stone/stone02_2
+	diffusemap			textures/quake_stone/stone02_2
+	bumpmap 			textures/quake_stone/stone02_2_norm
+}
+
+textures/quake_stone/stone02_3
+{
+	qer_editorimage 	textures/quake_stone/stone02_3
+	diffusemap			textures/quake_stone/stone02_3
+	bumpmap 			textures/quake_stone/stone02_3_norm
+}
+
+textures/quake_stone/stone02_4
+{
+	qer_editorimage 	textures/quake_stone/stone02_4
+	diffusemap			textures/quake_stone/stone02_4
+	bumpmap 			textures/quake_stone/stone02_4_norm
+	{
+		blend	add
+		map				textures/quake_stone/stone02_4_gloss
+	}
+}
+
+textures/quake_stone/stone02_5
+{
+	qer_editorimage 	textures/quake_stone/stone02_5
+	diffusemap			textures/quake_stone/stone02_5
+	bumpmap 			textures/quake_stone/stone02_5_norm
+}
+
+textures/quake_stone/stone02_6
+{
+	qer_editorimage 	textures/quake_stone/stone02_6
+	diffusemap			textures/quake_stone/stone02_6
+	bumpmap 			textures/quake_stone/stone02_6_norm
+}
+
+textures/quake_stone/stone02_7
+{
+	qer_editorimage 	textures/quake_stone/stone02_7
+	diffusemap			textures/quake_stone/stone02_7
+	bumpmap 			textures/quake_stone/stone02_7_norm
+}
+
+textures/quake_stone/stone02_8
+{
+	qer_editorimage 	textures/quake_stone/stone02_8
+	diffusemap			textures/quake_stone/stone02_8
+	bumpmap 			textures/quake_stone/stone02_8_norm
+}
+
+textures/quake_stone/stone03_1
+{
+	qer_editorimage 	textures/quake_stone/stone03_1
+	diffusemap			textures/quake_stone/stone03_1
+	bumpmap 			textures/quake_stone/stone03_1_norm
+}
+
+textures/quake_stone/stone03_2
+{
+	qer_editorimage 	textures/quake_stone/stone03_2
+	diffusemap			textures/quake_stone/stone03_2
+	bumpmap 			textures/quake_stone/stone03_2_norm
+}
+
+textures/quake_stone/stone03_3
+{
+	qer_editorimage 	textures/quake_stone/stone03_3
+	diffusemap			textures/quake_stone/stone03_3
+	bumpmap 			textures/quake_stone/stone03_3_norm
+}
+
+textures/quake_stone/stone03_4
+{
+	qer_editorimage 	textures/quake_stone/stone03_4
+	diffusemap			textures/quake_stone/stone03_4
+	bumpmap 			textures/quake_stone/stone03_4_norm
+}
+
+textures/quake_stone/stone03_5
+{
+	qer_editorimage 	textures/quake_stone/stone03_5
+	diffusemap			textures/quake_stone/stone03_5
+	bumpmap 			textures/quake_stone/stone03_5_norm
+}
+
+textures/quake_stone/stone04_1
+{
+	qer_editorimage 	textures/quake_stone/stone04_1
+	diffusemap			textures/quake_stone/stone04_1
+	bumpmap 			textures/quake_stone/stone04_1_norm
+}
+
+textures/quake_stone/stone04_2
+{
+	qer_editorimage 	textures/quake_stone/stone04_2
+	diffusemap			textures/quake_stone/stone04_2
+	bumpmap 			textures/quake_stone/stone04_2_norm
+}
+
+textures/quake_stone/stone04_3
+{
+	qer_editorimage 	textures/quake_stone/stone04_3
+	diffusemap			textures/quake_stone/stone04_3
+	bumpmap 			textures/quake_stone/stone04_3_norm
+}
+
+textures/quake_stone/stone04_4
+{
+	qer_editorimage 	textures/quake_stone/stone04_4
+	diffusemap			textures/quake_stone/stone04_4
+	bumpmap 			textures/quake_stone/stone04_4_norm
+}
+
+textures/quake_stone/stone05_1
+{
+	qer_editorimage 	textures/quake_stone/stone05_1
+	diffusemap			textures/quake_stone/stone05_1
+	bumpmap 			textures/quake_stone/stone05_1_norm
+}
+
+textures/quake_stone/stone05_2
+{
+	qer_editorimage 	textures/quake_stone/stone05_2
+	diffusemap			textures/quake_stone/stone05_2
+	bumpmap 			textures/quake_stone/stone05_2_norm
+}
+
+textures/quake_stone/stone05_3
+{
+	qer_editorimage 	textures/quake_stone/stone05_3
+	diffusemap			textures/quake_stone/stone05_3
+	bumpmap 			textures/quake_stone/stone05_3_norm
+}
+
+textures/quake_stone/stone05_4
+{
+	qer_editorimage 	textures/quake_stone/stone05_4
+	diffusemap			textures/quake_stone/stone05_4
+	bumpmap 			textures/quake_stone/stone05_4_norm
+}

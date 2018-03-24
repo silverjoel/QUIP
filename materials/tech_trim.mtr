@@ -1,0 +1,123 @@
+//////////////////////////////////////////////
+//tech_trim
+//////////////////////////////////////////////
+
+
+textures/tech_trim/tech01_9
+{
+	qer_editorimage 	textures/tech_trim/tech01_9
+	diffusemap 			textures/tech_trim/tech01_9
+	bumpmap 			textures/tech_trim/tech01_9_norm
+}
+
+textures/tech_trim/tech02_2
+{
+	qer_editorimage 	textures/tech_trim/tech02_2
+	diffusemap 			textures/tech_trim/tech02_2
+	bumpmap 			textures/tech_trim/tech02_2_norm
+}
+
+textures/tech_trim/tech02_3
+{
+	qer_editorimage 	textures/tech_trim/tech02_3
+	diffusemap 			textures/tech_trim/tech02_3
+	bumpmap 			textures/tech_trim/tech02_3_norm
+}
+
+textures/tech_trim/tech02_5
+{
+	qer_editorimage 	textures/tech_trim/tech02_5
+	diffusemap 			textures/tech_trim/tech02_5
+	bumpmap 			textures/tech_trim/tech02_5_norm
+}
+
+textures/tech_trim/tech02_6
+{
+	qer_editorimage 	textures/tech_trim/tech02_6
+	diffusemap 			textures/tech_trim/tech02_6
+	bumpmap 			textures/tech_trim/tech02_6_norm
+}
+
+textures/tech_trim/tech02_7
+{
+	qer_editorimage 	textures/tech_trim/tech02_7
+	diffusemap 			textures/tech_trim/tech02_7
+	bumpmap 			textures/tech_trim/tech02_7_norm
+}
+
+textures/tech_trim/tech04_1
+{
+	qer_editorimage 	textures/tech_trim/tech04_1
+	diffusemap 			textures/tech_trim/tech04_1
+	bumpmap 			textures/tech_trim/tech04_1_norm
+}
+
+textures/tech_trim/tech04_2
+{
+	qer_editorimage 	textures/tech_trim/tech04_2
+	diffusemap 			textures/tech_trim/tech04_2
+	bumpmap 			textures/tech_trim/tech04_2_norm
+}
+
+textures/tech_trim/tech04_3
+{
+	qer_editorimage 	textures/tech_trim/tech04_3
+	diffusemap 			textures/tech_trim/tech04_3
+	bumpmap 			textures/tech_trim/tech04_3_norm
+}
+
+textures/tech_trim/tech04_4
+{
+	qer_editorimage 	textures/tech_trim/tech04_4
+	diffusemap 			textures/tech_trim/tech04_4
+	bumpmap 			textures/tech_trim/tech04_4_norm
+}
+
+textures/tech_trim/tech04_5
+{
+	qer_editorimage 	textures/tech_trim/tech04_5
+	diffusemap 			textures/tech_trim/tech04_5
+	bumpmap 			textures/tech_trim/tech04_5_norm
+}
+
+textures/tech_trim/tech04_6
+{
+	qer_editorimage 	textures/tech_trim/tech04_6
+	diffusemap 			textures/tech_trim/tech04_6
+	bumpmap 			textures/tech_trim/tech04_6_norm
+}
+
+textures/tech_trim/tech04_7
+{
+	qer_editorimage 	textures/tech_trim/tech04_7
+	diffusemap 			textures/tech_trim/tech04_7
+	bumpmap 			textures/tech_trim/tech04_7_norm
+}
+
+textures/tech_trim/tech04_8
+{
+	qer_editorimage 	textures/tech_trim/tech04_8
+	diffusemap 			textures/tech_trim/tech04_8
+	bumpmap 			textures/tech_trim/tech04_8_norm
+}
+
+textures/tech_trim/tech04_9
+{
+	qer_editorimage 	textures/tech_trim/tech04_9
+	diffusemap 			textures/tech_trim/tech04_9
+	bumpmap 			textures/tech_trim/tech04_9_norm
+}
+
+textures/tech_trim/tech10_1
+{
+	qer_editorimage 	textures/tech_trim/tech10_1
+	diffusemap 			textures/tech_trim/tech10_1
+	bumpmap 			textures/tech_trim/tech10_1_norm
+}
+
+textures/tech_trim/tech10_3
+{
+	qer_editorimage 	textures/tech_trim/tech10_3
+	diffusemap 			textures/tech_trim/tech10_3
+	bumpmap 			textures/tech_trim/tech10_3_norm
+}

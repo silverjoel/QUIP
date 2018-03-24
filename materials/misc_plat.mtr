@@ -1,0 +1,31 @@
+//////////////////////////////////////////////
+//misc_plat
+//////////////////////////////////////////////
+
+
+textures/misc_plat/pside01
+{
+	qer_editorimage 	textures/misc_plat/pside01
+	diffusemap			textures/misc_plat/pside01
+	bumpmap 			textures/misc_plat/pside01_norm			
+	{
+		blend	add
+		map				textures/misc_plat/pside01_luma
+	}
+}
+
+textures/misc_plat/pstem01
+{
+	qer_editorimage 	textures/misc_plat/pstem01
+	diffusemap			textures/misc_plat/pstem01
+	bumpmap 			textures/misc_plat/pstem01_norm
+}
+
+textures/misc_plat/ptop01
+{
+	qer_editorimage 	textures/misc_plat/ptop01
+	diffusemap			textures/misc_plat/ptop01
+	bumpmap 			textures/misc_plat/ptop01_norm
+}
+
+

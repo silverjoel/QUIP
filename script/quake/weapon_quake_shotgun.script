@@ -1,0 +1,103 @@
+/***********************************************************************
+
+weapon_quake_shotgun.script
+
+***********************************************************************/
+
+#define 	SHOTGUN_FIRERATE		0.5
+#define	SHOTGUN_NUMPROJECTILES		6
+
+// blend times
+#define 	SHOTGUN_IDLE_TO_LOWER	0
+#define 	SHOTGUN_IDLE_TO_FIRE	0
+#define 	SHOTGUN_RAISE_TO_IDLE	0
+#define 	SHOTGUN_FIRE_TO_IDLE	0
+
+object weapon_quake_shotgun : weapon_base {
+	float		next_attack;
+	float		spread;
+	
+	void		init();
+	
+	void		Lower();
+	void		Raise();
+	void		Idle();
+	void		Fire();
+	void		ExitCinematic();
+};
+
+void weapon_quake_shotgun::init() {
+	next_attack 	= 0;
+	spread		= getFloatKey( "spread" );
+	weaponState		( "Raise", 0 );
+}
+
+void weapon_quake_shotgun::Raise() {
+	weaponRising();
+	playAnim( ANIMCHANNEL_ALL, "raise" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, SHOTGUN_RAISE_TO_IDLE ) );
+	weaponState( "Idle", SHOTGUN_RAISE_TO_IDLE );
+}
+
+void weapon_quake_shotgun::Lower() {
+	weaponLowering();
+	playAnim( ANIMCHANNEL_ALL, "putaway" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, 0 ) );
+	weaponHolstered();
+	waitUntil( WEAPON_RAISEWEAPON );
+	weaponState( "Raise", 0 );
+}
+
+void weapon_quake_shotgun::Idle() {
+	float currentTime;
+	float ammoClip;
+	float avail;
+	float clip_size;
+	
+	clip_size = clipSize();	
+	
+	if ( !ammoAvailable() = 0) {
+		weaponOutOfAmmo();
+	} else {
+		weaponReady();
+	}
+	playCycle( ANIMCHANNEL_ALL, "idle" );
+	while( 1 ) {
+		if ( WEAPON_LOWERWEAPON ) {
+			weaponState( "Lower", SHOTGUN_IDLE_TO_LOWER );
+		}
+		currentTime = sys.getTime();
+		ammoClip = ammoAvailable();
+		if ( ( currentTime >= next_attack ) && WEAPON_ATTACK ) {
+			if ( ammoClip > 0 ) {
+				weaponState( "Fire", SHOTGUN_IDLE_TO_FIRE );
+			}
+		}
+		waitFrame();
+	}
+}
+
+void weapon_quake_shotgun::Fire() {
+	float ammoClip;
+	
+	next_attack = sys.getTime() + SHOTGUN_FIRERATE;
+	
+	ammoClip = ammoInClip();
+	
+	launchProjectiles( SHOTGUN_NUMPROJECTILES, spread, 0, 1.0, 1.0 );
+	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	
+	//if ( isQuad() ) {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	//	startSound( "snd_firequad", SND_CHANNEL_BODY2, false );
+	//} else {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	//}
+	weaponState( "Idle", SHOTGUN_FIRE_TO_IDLE );
+}
+
+void weapon_quake_shotgun::ExitCinematic() {
+	next_attack = 0;
+	weaponState( "Idle", 0 );
+}
+

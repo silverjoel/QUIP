@@ -1,0 +1,148 @@
+//////////////////////////////////////////////
+//tech_light
+//////////////////////////////////////////////
+
+
+textures/tech_light/tlight01
+{
+	qer_editorimage 	textures/tech_light/tlight01
+	diffusemap 			textures/tech_light/tlight01
+	bumpmap 			textures/tech_light/tlight01_norm
+	{
+		blend add
+		map				textures/tech_light/tlight01_luma
+	}
+}
+
+textures/tech_light/tlight01_2
+{
+	qer_editorimage 	textures/tech_light/tlight01_2
+	diffusemap 			textures/tech_light/tlight01_2
+	bumpmap 			textures/tech_light/tlight01_2_norm
+}
+
+
+textures/tech_light/tlight02
+{
+	noSelfShadow
+	noshadows
+
+	qer_editorimage 	textures/tech_light/tlight02
+	diffusemap 			textures/tech_light/tlight02
+	bumpmap 			textures/tech_light/tlight02_norm
+	{
+		blend add
+		map				textures/tech_light/tlight02_luma
+	}
+}
+
+textures/tech_light/tlight02_2
+{
+	qer_editorimage 	textures/tech_light/tlight02_2
+	diffusemap 			textures/tech_light/tlight02_2
+	bumpmap 			textures/tech_light/tlight02_2_norm
+	{
+		blend add
+		map				textures/tech_light/tlight02_2_luma
+	}
+}
+
+textures/tech_light/tlight03
+{
+	qer_editorimage 	textures/tech_light/tlight03
+	diffusemap 			textures/tech_light/tlight03
+	bumpmap 			textures/tech_light/tlight03_norm
+	specularmap			textures/tech_light/tlight03_gloss
+	{
+		blend add
+		map				textures/tech_light/tlight03_luma
+	}
+}
+
+textures/tech_light/tlight03_2
+{
+	qer_editorimage 	textures/tech_light/tlight03_2
+	diffusemap 			textures/tech_light/tlight03_2
+	bumpmap 			textures/tech_light/tlight03_2_norm
+	{
+		blend add
+		map				textures/tech_light/tlight03_2_luma
+	}
+}
+
+textures/tech_light/tlight04
+{
+	noSelfShadow
+	noshadows
+	
+	qer_editorimage 	textures/tech_light/tlight04
+	diffusemap 			textures/tech_light/tlight04
+	bumpmap 			textures/tech_light/tlight04_norm
+	specularmap			textures/tech_light/tlight04_gloss
+	{
+		blend add
+		map				textures/tech_light/tlight04_luma
+	}
+}
+
+textures/tech_light/tlight04_2
+{
+	qer_editorimage 	textures/tech_light/tlight04_2
+	diffusemap 			textures/tech_light/tlight04_2
+	bumpmap 			textures/tech_light/tlight04_2_norm
+	specularmap			textures/tech_light/tlight04_2_gloss
+	{
+		blend add
+		map				textures/tech_light/tlight04_2_luma
+	}
+}
+
+textures/tech_light/tlight05
+{
+	metal
+	noSelfShadow
+	noshadows
+	qer_editorimage 	textures/tech_light/tlight05
+	diffusemap 			textures/tech_light/tlight05
+	bumpmap 			textures/tech_light/tlight05_norm
+	specularmap			textures/tech_light/tlight05_gloss
+	{
+		blend add
+		map				textures/tech_light/tlight05_luma
+	}
+}
+
+
+textures/tech_light/bulb_yellow
+{
+
+	qer_editorimage 	textures/tech_light/bulb_yellow
+	diffusemap 			textures/tech_light/bulb_yellow
+	specularmap			textures/tech_light/bulb_yellow_gloss
+	{
+		blend add
+		map				textures/tech_light/bulb_yellow_luma
+	}
+}
+
+textures/tech_light/bulb_blue
+{
+
+	qer_editorimage 	textures/tech_light/bulb_blue
+	diffusemap 			textures/tech_light/bulb_blue
+	specularmap			textures/tech_light/bulb_blue_gloss
+	{
+		blend add
+		map				textures/tech_light/bulb_blue
+	}
+}
+
+textures/tech_light/lightbase_brown
+{
+
+	qer_editorimage 	textures/tech_light/lightbase_brown
+	diffusemap 			textures/tech_light/lightbase_brown
+	bumpmap				textures/tech_light/lightbase_brown_normal
+	specularmap			textures/tech_light/lightbase_brown_gloss
+	
+}

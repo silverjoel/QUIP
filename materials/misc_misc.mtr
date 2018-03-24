@@ -1,0 +1,61 @@
+//////////////////////////////////////////////
+//misc_misc
+//////////////////////////////////////////////
+
+
+textures/misc_misc/dopeback
+{
+	qer_editorimage 	textures/misc_misc/dopeback
+	diffusemap			textures/misc_misc/dopeback
+	bumpmap 			textures/misc_misc/dopeback_norm
+}
+
+textures/misc_misc/dopefish
+{
+	qer_editorimage 	textures/misc_misc/dopefish
+	diffusemap			textures/misc_misc/dopefish
+	bumpmap 			textures/misc_misc/dopefish_norm
+}
+
+textures/misc_misc/quake
+{
+	qer_editorimage 	textures/misc_misc/quake
+	diffusemap			textures/misc_misc/quake
+}
+
+textures/misc_misc/raven
+{
+	qer_editorimage 	textures/misc_misc/raven
+	diffusemap			textures/misc_misc/raven
+	bumpmap 			textures/misc_misc/raven_norm
+}
+
+textures/misc_misc/skill0
+{
+	qer_editorimage 	textures/misc_misc/skill0
+	diffusemap			textures/misc_misc/skill0
+	bumpmap 			textures/misc_misc/skill0_norm
+}
+
+textures/misc_misc/skill1
+{
+	qer_editorimage 	textures/misc_misc/skill1
+	diffusemap			textures/misc_misc/skill1
+	bumpmap 			textures/misc_misc/skill1_norm
+}
+
+textures/misc_misc/skill2
+{
+	qer_editorimage 	textures/misc_misc/skill2
+	diffusemap			textures/misc_misc/skill2
+	bumpmap 			textures/misc_misc/skill2_norm
+}
+
+textures/misc_misc/skill3
+{
+	qer_editorimage 	textures/misc_misc/skill3
+	diffusemap			textures/misc_misc/skill3
+	bumpmap 			textures/misc_misc/skill3_norm
+}
+
+

@@ -1,0 +1,231 @@
+//////////////////////////////////////////////
+//quake_door
+//////////////////////////////////////////////
+
+
+textures/quake_door/arch01
+{
+	qer_editorimage 	textures/quake_door/arch01
+	diffusemap			textures/quake_door/arch01
+	bumpmap 			textures/quake_door/arch01_norm
+}
+
+textures/quake_door/arch02
+{
+	qer_editorimage 	textures/quake_door/arch02
+	diffusemap			textures/quake_door/arch02
+	bumpmap 			textures/quake_door/arch02_norm
+}
+
+textures/quake_door/arch03
+{
+	qer_editorimage 	textures/quake_door/arch03
+	diffusemap			textures/quake_door/arch03
+	bumpmap 			textures/quake_door/arch03_norm
+}
+
+textures/quake_door/arch04
+{
+	qer_editorimage 	textures/quake_door/arch04
+	diffusemap			textures/quake_door/arch04
+	bumpmap 			textures/quake_door/arch04_norm
+}
+
+textures/quake_door/arch05
+{
+	qer_editorimage 	textures/quake_door/arch05
+	diffusemap			textures/quake_door/arch05
+	bumpmap 			textures/quake_door/arch05_norm
+}
+
+textures/quake_door/arch06
+{
+	qer_editorimage 	textures/quake_door/arch06
+	diffusemap			textures/quake_door/arch06
+	bumpmap 			textures/quake_door/arch06_norm
+}
+
+textures/quake_door/door01_1
+{
+	qer_editorimage 	textures/quake_door/door01_1
+	diffusemap			textures/quake_door/door01_1
+	bumpmap 			textures/quake_door/door01_1_norm
+}
+
+textures/quake_door/door01_2
+{
+	qer_editorimage 	textures/quake_door/door01_2
+	diffusemap			textures/quake_door/door01_2
+	bumpmap 			textures/quake_door/door01_2_norm
+}
+
+textures/quake_door/door01_3
+{
+	qer_editorimage 	textures/quake_door/door01_3
+	diffusemap			textures/quake_door/door01_3
+	bumpmap 			textures/quake_door/door01_3_norm
+}
+
+textures/quake_door/door01_4
+{
+	qer_editorimage 	textures/quake_door/door01_4
+	diffusemap			textures/quake_door/door01_4
+	bumpmap 			textures/quake_door/door01_4_norm
+}
+
+textures/quake_door/door01_5
+{
+	qer_editorimage 	textures/quake_door/door01_5
+	diffusemap			textures/quake_door/door01_5
+	bumpmap 			textures/quake_door/door01_5_norm
+}
+
+textures/quake_door/door01_6
+{
+	qer_editorimage 	textures/quake_door/door01_6
+	diffusemap			textures/quake_door/door01_6
+	bumpmap 			textures/quake_door/door01_6_norm
+}
+
+textures/quake_door/door01_7
+{
+	qer_editorimage 	textures/quake_door/door01_7
+	diffusemap			textures/quake_door/door01_7
+	bumpmap 			textures/quake_door/door01_7_norm
+}
+
+textures/quake_door/door01_8
+{
+	qer_editorimage 	textures/quake_door/door01_8
+	diffusemap			textures/quake_door/door01_8
+	bumpmap 			textures/quake_door/door01_8_norm
+}
+
+textures/quake_door/door01_9
+{
+	qer_editorimage 	textures/quake_door/door01_9
+	diffusemap			textures/quake_door/door01_9
+	bumpmap 			textures/quake_door/door01_9_norm
+}
+
+textures/quake_door/door02_1
+{
+	qer_editorimage 	textures/quake_door/door02_1
+	diffusemap			textures/quake_door/door02_1
+	bumpmap 			textures/quake_door/door02_1_norm
+}
+
+textures/quake_door/door02_2
+{
+	qer_editorimage 	textures/quake_door/door02_2
+	diffusemap			textures/quake_door/door02_2
+	bumpmap 			textures/quake_door/door02_2_norm
+}
+
+textures/quake_door/door02_3
+{
+	qer_editorimage 	textures/quake_door/door02_3
+	diffusemap			textures/quake_door/door02_3
+	bumpmap 			textures/quake_door/door02_3_norm
+}
+
+textures/quake_door/door02_4
+{
+	qer_editorimage 	textures/quake_door/door02_4
+	diffusemap			textures/quake_door/door02_4
+	bumpmap 			textures/quake_door/door02_4_norm
+}
+
+textures/quake_door/door02_5
+{
+	qer_editorimage 	textures/quake_door/door02_5
+	diffusemap			textures/quake_door/door02_5
+	bumpmap 			textures/quake_door/door02_5_norm
+}
+
+textures/quake_door/door03_1
+{
+	qer_editorimage 	textures/quake_door/door03_1
+	diffusemap			textures/quake_door/door03_1
+	bumpmap 			textures/quake_door/door03_1_norm
+}
+
+textures/quake_door/doort01_1
+{
+	qer_editorimage 	textures/quake_door/doort01_1
+	diffusemap			textures/quake_door/doort01_1
+	bumpmap 			textures/quake_door/doort01_1_norm
+}
+
+textures/quake_door/doort01_2
+{
+	qer_editorimage 	textures/quake_door/doort01_2
+	diffusemap			textures/quake_door/doort01_2
+	bumpmap 			textures/quake_door/doort01_2_norm
+}
+
+textures/quake_door/doort01_3
+{
+	qer_editorimage 	textures/quake_door/doort01_3
+	diffusemap			textures/quake_door/doort01_3
+	bumpmap 			textures/quake_door/doort01_3_norm
+}
+
+textures/quake_door/doort01_4
+{
+	qer_editorimage 	textures/quake_door/doort01_4
+	diffusemap			textures/quake_door/doort01_4
+	bumpmap 			textures/quake_door/doort01_4_norm
+}
+
+textures/quake_door/doort01_5
+{
+	qer_editorimage 	textures/quake_door/doort01_5
+	diffusemap			textures/quake_door/doort01_5
+	bumpmap 			textures/quake_door/doort01_5_norm
+}
+
+textures/quake_door/doort01_6
+{
+	qer_editorimage 	textures/quake_door/doort01_6
+	diffusemap			textures/quake_door/doort01_6
+	bumpmap 			textures/quake_door/doort01_6_norm
+}
+
+textures/quake_door/doort01_7
+{
+	qer_editorimage 	textures/quake_door/doort01_7
+	diffusemap			textures/quake_door/doort01_7
+	bumpmap 			textures/quake_door/doort01_7_norm
+}
+
+textures/quake_door/enter01
+{
+	qer_editorimage 	textures/quake_door/enter01
+	diffusemap			textures/quake_door/enter01
+	bumpmap 			textures/quake_door/enter01_norm
+}
+
+textures/quake_door/enter01t
+{
+	qer_editorimage 	textures/quake_door/enter01t
+	diffusemap			textures/quake_door/enter01t
+	bumpmap 			textures/quake_door/enter01t_norm
+}
+
+textures/quake_door/exit01
+{
+	qer_editorimage 	textures/quake_door/exit01
+	diffusemap			textures/quake_door/exit01
+	bumpmap 			textures/quake_door/exit01_norm
+}
+
+textures/quake_door/exit01t
+{
+	qer_editorimage 	textures/quake_door/exit01t
+	diffusemap			textures/quake_door/exit01t
+	bumpmap 			textures/quake_door/exit01t_norm
+}
+
+
+

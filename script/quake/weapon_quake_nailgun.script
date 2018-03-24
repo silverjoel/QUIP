@@ -1,0 +1,121 @@
+/***********************************************************************
+
+weapon_quake_nailgun.script
+
+***********************************************************************/
+
+#define QUAKE_NAILGUN_NUMPROJECTILES		1
+
+// blend times
+#define QUAKE_NAILGUN_IDLE_TO_LOWER			0
+#define QUAKE_NAILGUN_IDLE_TO_FIRE			0
+#define QUAKE_NAILGUN_RAISE_TO_IDLE			0
+#define QUAKE_NAILGUN_FIRE_TO_IDLE			4
+
+object weapon_quake_nailgun : weapon_base {
+	float		next_attack;
+	float		spread;
+	
+	void		init();
+	
+	void		Lower();
+	void		Raise();
+	void		Idle();
+	void		Fire();
+	void		LaunchQuakeNail();
+	void		ExitCinematic();
+};
+
+void weapon_quake_nailgun::init() {
+	next_attack 	= 0;
+	spread		= getFloatKey( "spread" );
+	weaponState( "Raise", 0 );
+}
+
+void weapon_quake_nailgun::Raise() {
+	weaponRising();
+	playAnim( ANIMCHANNEL_ALL, "raise" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, QUAKE_NAILGUN_RAISE_TO_IDLE ) );
+	weaponState( "Idle", QUAKE_NAILGUN_RAISE_TO_IDLE );
+}
+
+void weapon_quake_nailgun::Lower() {
+	weaponLowering();
+	playAnim( ANIMCHANNEL_ALL, "putaway" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, 0 ) );
+	weaponHolstered();
+	waitUntil( WEAPON_RAISEWEAPON );
+	weaponState( "Raise", 0 );
+}
+
+void weapon_quake_nailgun::Idle() {
+	float currentTime;
+	float ammoClip;
+	float avail;
+	float clip_size;
+	
+	clip_size = clipSize();	
+	
+	if ( !ammoAvailable() = 0) {
+		weaponOutOfAmmo();
+	} else {
+		weaponReady();
+	}
+
+	playCycle( ANIMCHANNEL_ALL, "idle" );
+	while( 1 ) {
+		if ( WEAPON_LOWERWEAPON ) {
+			weaponState( "Lower", QUAKE_NAILGUN_IDLE_TO_LOWER );
+		}
+		currentTime = sys.getTime();
+		ammoClip = ammoAvailable();
+		if ( ( currentTime >= next_attack ) && WEAPON_ATTACK ) {
+			if ( ammoClip > 0 ) {
+				weaponState( "Fire", QUAKE_NAILGUN_IDLE_TO_FIRE );
+			}
+		}
+		waitFrame();
+	}
+}
+
+void weapon_quake_nailgun::Fire() {
+	float ammoClip;
+	float currentTime;
+
+	ammoClip = ammoAvailable();
+
+	playAnim( ANIMCHANNEL_ALL, "fire_quick" );
+	
+	waitUntil( animDone( ANIMCHANNEL_ALL, 0 ) );
+	playCycle( ANIMCHANNEL_ALL, "fire" );
+
+	next_attack = sys.getTime();
+
+	while( WEAPON_ATTACK && ( ammoClip > 0 ) ) {
+		currentTime = sys.getTime();
+		if ( currentTime >= next_attack ) {
+			ammoClip = ammoAvailable();
+			next_attack = currentTime;
+		}
+		waitFrame();
+	}
+	waitUntil( animDone( ANIMCHANNEL_ALL, 0 ) );
+	weaponState( "Idle", QUAKE_NAILGUN_FIRE_TO_IDLE );
+}
+
+void weapon_quake_nailgun::LaunchQuakeNail() {
+	//if ( isQuad() ) {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	//	startSound( "snd_firequad", SND_CHANNEL_BODY2, false );
+	//} else {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	//}
+
+	startSound( "snd_fire", SND_CHANNEL_WEAPON, false );
+	launchProjectiles( QUAKE_NAILGUN_NUMPROJECTILES, spread, 0, 1.0, 1.0 );
+}
+
+void weapon_quake_nailgun::ExitCinematic() {
+	next_attack = 0;
+	weaponState( "Idle", 0 );
+}

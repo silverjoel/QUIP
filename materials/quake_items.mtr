@@ -1,0 +1,221 @@
+/***********************************************************************
+
+	quake_items.mtr 
+	- Material shaders for Quake related items (ammo, health, armor...)
+
+***********************************************************************/
+
+//*****************
+//Ammo
+//*****************
+models/quake/items/ammo/spike_tx
+{
+	noshadows
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/ammo/spike_d.tga
+	specularmap	 	models/quake/items/ammo/spike_s.tga
+}
+
+models/quake/items/ammo/shells_small_tx
+{
+	noshadows
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/ammo/shells_small_d.tga
+	bumpmap      	models/quake/items/ammo/shells_small_local.tga
+	specularmap	 	models/quake/items/ammo/shells_small_s.tga
+}
+
+models/quake/items/ammo/nails_small_tx
+{
+	noshadows
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/ammo/nails_small_d.tga
+	bumpmap      	models/quake/items/ammo/nails_small_local.tga
+	specularmap	 	models/quake/items/ammo/nails_small_s.tga
+}
+
+models/quake/items/ammo/rockets_small_tx
+{
+	noshadows
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/ammo/rockets_small_d.tga
+	bumpmap      	models/quake/items/ammo/rockets_small_local.tga
+	specularmap	 	models/quake/items/ammo/rockets_small_s.tga
+}
+
+models/quake/items/ammo/cells_small_tx
+{
+	noshadows
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/ammo/cells_small_d.tga
+	bumpmap      	models/quake/items/ammo/cells_small_local.tga
+	specularmap	 	models/quake/items/ammo/cells_small_s.tga
+	{
+		blend	add
+		map				models/quake/items/ammo/cells_small_g.tga
+	}
+}
+
+
+models/quake/items/ammo/cells_large_tx
+{
+	noshadows
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/ammo/cells_large_d.tga
+	bumpmap      	models/quake/items/ammo/cells_large_local.tga
+	specularmap	 	models/quake/items/ammo/cells_large_s.tga
+	
+}
+
+models/quake/items/health/health_small_tx
+{
+	noshadows
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/health/health_small_d.tga
+	bumpmap      	models/quake/items/health/health_small_local.tga
+	specularmap	 	models/quake/items/health/health_small_s.tga
+	
+	{
+		blend	add
+		map				models/quake/items/health/health_small_g.tga
+	}
+}
+
+models/quake/items/health/health_small_screen_tx
+{
+	qer_EditorImage models/quake/items/health/health_small_gt1.tga
+	noShadows
+	{
+		blend add
+		map models/quake/items/health/health_small_gt1.tga
+	}
+	{
+		blend add
+		map models/quake/items/health/health_small_gt2.tga
+		red 		( blinktable [Parm4 + (time * (3 * Parm3)) ]) * Parm0
+		green 		( blinktable [Parm4 + (time * (3 * Parm3)) ]) * Parm1
+		blue 		( blinktable [Parm4 + (time * (3 * Parm3)) ]) * Parm2
+	}
+}
+
+models/quake/items/armor/greenarmor_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/armor/greenarmor_d.tga
+	//bumpmap      	models/quake/items/armor/greenarmor_local.tga
+	specularmap	 	models/quake/items/armor/greenarmor_s.tga
+}
+
+models/quake/items/armor/yellowarmor_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/armor/yellowarmor_d.tga
+	//bumpmap      	models/quake/items/armor/yellowarmor_local.tga
+	specularmap	 	models/quake/items/armor/yellowarmor_s.tga
+}
+
+models/quake/items/armor/redarmor_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/armor/redarmor_d.tga
+	//bumpmap      	models/quake/items/armor/redarmor_local.tga
+	specularmap	 	models/quake/items/armor/redarmor_s.tga
+}
+
+
+models/quake/items/misc/misc_explodingbox_small_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/misc/misc_explodingbox_small_d.tga
+	bumpmap      	models/quake/items/misc/misc_explodingbox_small_local.tga
+	specularmap	 	models/quake/items/misc/misc_explodingbox_small_s.tga
+	
+	{
+		if ( ( time * 6 ) % 5 == 0 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g0.tga
+	}
+	{
+		if ( ( time * 6 ) % 5 == 1 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g1.tga
+	}
+	{
+		if ( ( time * 6 ) % 5 == 2 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g2.tga
+	}
+	{
+		if ( ( time * 6 ) % 5 == 3 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g3.tga
+	}
+	{
+		if ( ( time * 6 ) % 5 == 4 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g4.tga
+	}
+	
+}
+
+models/quake/items/misc/misc_explodingbox_large_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/items/misc/misc_explodingbox_large_d.tga
+	bumpmap      	models/quake/items/misc/misc_explodingbox_large_local.tga
+	specularmap	 	models/quake/items/misc/misc_explodingbox_large_s.tga
+	{
+		if ( ( time * 6 ) % 5 == 0 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g0.tga
+	}
+	{
+		if ( ( time * 6 ) % 5 == 1 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g1.tga
+	}
+	{
+		if ( ( time * 6 ) % 5 == 2 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g2.tga
+	}
+	{
+		if ( ( time * 6 ) % 5 == 3 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g3.tga
+	}
+	{
+		if ( ( time * 6 ) % 5 == 4 )
+		blend	add
+		map		models/quake/items/misc/misc_explodingbox_small_g4.tga
+	}
+}

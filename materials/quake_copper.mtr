@@ -1,0 +1,137 @@
+//////////////////////////////////////////////
+//quake_copper
+//////////////////////////////////////////////
+
+
+textures/quake_copper/cop1_1
+{
+	qer_editorimage 	textures/quake_copper/cop1_1
+	diffusemap			textures/quake_copper/cop1_1
+	bumpmap 			textures/quake_copper/cop1_1_norm
+}
+
+textures/quake_copper/cop1_2
+{
+	qer_editorimage 	textures/quake_copper/cop1_2
+	diffusemap			textures/quake_copper/cop1_2
+	bumpmap 			textures/quake_copper/cop1_2_norm
+}
+
+textures/quake_copper/cop1_3
+{
+	qer_editorimage 	textures/quake_copper/cop1_3
+	diffusemap			textures/quake_copper/cop1_3
+	bumpmap 			textures/quake_copper/cop1_3_norm
+}
+
+textures/quake_copper/cop1_4
+{
+	qer_editorimage 	textures/quake_copper/cop1_4
+	diffusemap			textures/quake_copper/cop1_4
+	bumpmap 			textures/quake_copper/cop1_4_norm
+}
+
+textures/quake_copper/cop1_5
+{
+	qer_editorimage 	textures/quake_copper/cop1_5
+	diffusemap			textures/quake_copper/cop1_5
+	bumpmap 			textures/quake_copper/cop1_4_norm_norm
+}
+
+textures/quake_copper/cop1_6
+{
+	qer_editorimage 	textures/quake_copper/cop1_6
+	diffusemap			textures/quake_copper/cop1_6
+	bumpmap 			textures/quake_copper/cop1_6_norm
+}
+
+textures/quake_copper/cop1_7
+{
+	qer_editorimage 	textures/quake_copper/cop1_7
+	diffusemap			textures/quake_copper/cop1_7
+	bumpmap 			textures/quake_copper/cop1_7_norm
+}
+
+textures/quake_copper/cop1_8
+{
+	qer_editorimage 	textures/quake_copper/cop1_8
+	diffusemap			textures/quake_copper/cop1_8
+	bumpmap 			textures/quake_copper/cop1_8_norm
+}
+
+textures/quake_copper/cop2_1
+{
+	qer_editorimage 	textures/quake_copper/cop2_1
+	diffusemap			textures/quake_copper/cop2_1
+	bumpmap 			textures/quake_copper/cop2_1_norm
+}
+
+textures/quake_copper/cop2_2
+{
+	qer_editorimage 	textures/quake_copper/cop2_2
+	diffusemap			textures/quake_copper/cop2_2
+	bumpmap 			textures/quake_copper/cop2_2_norm
+}
+
+textures/quake_copper/cop2_3
+{
+	qer_editorimage 	textures/quake_copper/cop2_3
+	diffusemap			textures/quake_copper/cop2_3
+	bumpmap 			textures/quake_copper/cop2_3_norm
+}
+
+textures/quake_copper/cop2_4
+{
+	qer_editorimage 	textures/quake_copper/cop2_4
+	diffusemap			textures/quake_copper/cop2_4
+	bumpmap 			textures/quake_copper/cop2_4_norm
+}
+
+textures/quake_copper/cop2_5
+{
+	qer_editorimage 	textures/quake_copper/cop2_5
+	diffusemap			textures/quake_copper/cop2_5
+	bumpmap 			textures/quake_copper/cop2_5_norm
+}
+
+textures/quake_copper/cop2_6
+{
+	qer_editorimage 	textures/quake_copper/cop2_6
+	diffusemap			textures/quake_copper/cop2_6
+	bumpmap 			textures/quake_copper/cop2_6_norm
+}
+
+textures/quake_copper/cop3_1
+{
+	qer_editorimage 	textures/quake_copper/cop3_1
+	diffusemap			textures/quake_copper/cop3_1
+	bumpmap 			textures/quake_copper/cop3_1_norm
+}
+
+textures/quake_copper/cop3_2
+{
+	qer_editorimage 	textures/quake_copper/cop3_2
+	diffusemap			textures/quake_copper/cop3_2
+	bumpmap 			textures/quake_copper/cop3_2_norm
+}
+
+textures/quake_copper/cop3_4
+{
+	qer_editorimage 	textures/quake_copper/cop3_4
+	diffusemap			textures/quake_copper/cop3_4
+	bumpmap 			textures/quake_copper/cop3_4_norm
+}
+
+textures/quake_copper/cop4_3
+{
+	qer_editorimage 	textures/quake_copper/cop4_3
+	diffusemap			textures/quake_copper/cop4_3
+	bumpmap 			textures/quake_copper/cop4_3_norm
+}
+
+textures/quake_copper/cop4_5
+{
+	qer_editorimage 	textures/quake_copper/cop4_5
+	diffusemap			textures/quake_copper/cop4_5
+	bumpmap 			textures/quake_copper/cop4_5_norm
+}

@@ -1,0 +1,104 @@
+//////////////////////////////////////////////
+//misc_slip
+//////////////////////////////////////////////
+
+table table7r { snap { 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 7, 7, 7, 7, 6, 6, 5, 5, 4, 4, 3, 3, 2, 2, 1, 1 } }
+table table4r { snap clamp { 0, 1, 2, 2, 3, 3, 3, 2, 2, 1, 0 } }
+
+textures/misc_slip/sbot01
+{
+	metal
+
+	qer_editorimage 	textures/misc_slip/sbot01
+	diffusemap			textures/misc_slip/sbot01
+	bumpmap 			textures/misc_slip/sbot01_norm
+}
+
+textures/misc_slip/sbot01t
+{
+	metal
+	
+	qer_editorimage 	textures/misc_slip/sbot01t
+	diffusemap			textures/misc_slip/sbot01t
+	bumpmap 			textures/misc_slip/sbot01t_norm
+}
+
+textures/misc_slip/sfront01
+{
+	metal
+	
+	qer_editorimage 	textures/misc_slip/sfront01
+	diffusemap			textures/misc_slip/sfront01
+	bumpmap 			textures/misc_slip/sfront01_norm
+	specularmap 		textures/misc_slip/sfront01_gloss
+	{
+		blend add
+		map				textures/misc_slip/sfront01_luma
+	}
+}
+
+textures/misc_slip/slight01
+{
+	metal
+	
+	qer_editorimage 	textures/misc_slip/slight01
+	diffusemap			textures/misc_slip/slight01
+	
+	{
+		blend add
+		map 			textures/misc_slip/slight01_luma
+		scale 1 / 8 , 1
+		scroll table7r[ time ] , 0	
+	}
+	
+	bumpmap 			textures/misc_slip/slight01_norm
+}
+
+textures/misc_slip/slight02
+{
+	glass
+	
+	qer_editorimage 	textures/misc_slip/slight02
+	diffusemap			textures/misc_slip/slight02
+	bumpmap 			textures/misc_slip/slight02_norm
+	specularmap 		textures/misc_slip/slight02_gloss
+	{
+		blend	add
+		map				textures/misc_slip/slight02_luma
+	}
+}
+
+textures/misc_slip/slight03
+{
+	glass
+	
+	qer_editorimage 	textures/misc_slip/slight03
+	diffusemap			textures/misc_slip/slight03
+	bumpmap 			textures/misc_slip/slight03_norm
+	specularmap 		textures/misc_slip/slight03_gloss
+	{
+		blend	add
+		map				textures/misc_slip/slight03_luma
+	}
+}
+
+textures/misc_slip/stop01
+{
+	metal
+	
+	qer_editorimage 	textures/misc_slip/stop01
+	diffusemap			textures/misc_slip/stop01
+	bumpmap 			textures/misc_slip/stop01_norm
+}
+
+textures/misc_slip/stop01t
+{
+	metal
+	
+	qer_editorimage 	textures/misc_slip/stop01t
+	diffusemap			textures/misc_slip/stop01t
+	bumpmap 			textures/misc_slip/stop01t_norm
+}
+
+
+

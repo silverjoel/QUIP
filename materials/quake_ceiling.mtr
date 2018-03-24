@@ -1,0 +1,47 @@
+//////////////////////////////////////////////
+//quake_ceiling
+//////////////////////////////////////////////
+
+
+textures/quake_ceiling/ceiling1_1
+{
+	qer_editorimage 	textures/quake_ceiling/ceiling1_1
+	diffusemap 			textures/quake_ceiling/ceiling1_1
+	bumpmap 			textures/quake_ceiling/ceiling1_1_norm
+}
+
+textures/quake_ceiling/ceiling2_1
+{
+	qer_editorimage 	textures/quake_ceiling/ceiling2_1
+	diffusemap 			textures/quake_ceiling/ceiling2_1
+	bumpmap 			textures/quake_ceiling/ceiling2_1_norm
+	{
+		blend	add
+		map				textures/quake_ceiling/ceiling2_1_luma
+	}
+}
+
+textures/quake_ceiling/ceiling2_2
+{
+	qer_editorimage 	textures/quake_ceiling/ceiling2_2
+	diffusemap 			textures/quake_ceiling/ceiling2_2
+	bumpmap 			textures/quake_ceiling/ceiling2_2_norm
+}
+
+textures/quake_ceiling/ceiling3_1
+{
+	qer_editorimage 	textures/quake_ceiling/ceiling3_1
+	diffusemap 			textures/quake_ceiling/ceiling3_1
+	bumpmap 			textures/quake_ceiling/ceiling3_1_norm
+	{
+		blend	add
+		map				textures/quake_ceiling/ceiling3_1_luma
+	}
+}
+
+textures/quake_ceiling/ceiling3_2
+{
+	qer_editorimage 	textures/quake_ceiling/ceiling3_2
+	diffusemap 			textures/quake_ceiling/ceiling3_2
+	bumpmap 			textures/quake_ceiling/ceiling3_2_norm
+}

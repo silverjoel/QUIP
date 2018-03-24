@@ -1,0 +1,112 @@
+//////////////////////////////////////////////
+//quake_natural
+//////////////////////////////////////////////
+
+
+textures/quake_natural/ground1_1
+{
+	qer_editorimage 	textures/quake_natural/ground1_1
+	diffusemap			textures/quake_natural/ground1_1
+	bumpmap 			textures/quake_natural/ground1_1_norm
+}
+
+textures/quake_natural/ground1_2
+{
+	qer_editorimage 	textures/quake_natural/ground1_2
+	diffusemap			textures/quake_natural/ground1_2
+	bumpmap 			textures/quake_natural/ground1_2_norm
+}
+
+textures/quake_natural/ground1_3
+{
+	qer_editorimage 	textures/quake_natural/ground1_3
+	diffusemap			textures/quake_natural/ground1_3
+	bumpmap 			textures/quake_natural/ground1_3_norm
+}
+
+textures/quake_natural/ground1_4
+{
+	qer_editorimage 	textures/quake_natural/ground1_4
+	diffusemap			textures/quake_natural/ground1_4
+	bumpmap 			textures/quake_natural/ground1_4_norm
+}
+
+textures/quake_natural/ground1_5
+{
+	qer_editorimage 	textures/quake_natural/ground1_5
+	diffusemap			textures/quake_natural/ground1_5
+	bumpmap 			textures/quake_natural/ground1_5_norm
+}
+
+textures/quake_natural/ground1_6
+{
+	qer_editorimage 	textures/quake_natural/ground1_6
+	diffusemap			textures/quake_natural/ground1_6
+	bumpmap 			textures/quake_natural/ground1_6_norm
+}
+
+textures/quake_natural/ground1_7
+{
+	qer_editorimage 	textures/quake_natural/ground1_7
+	diffusemap			textures/quake_natural/ground1_7
+	bumpmap 			textures/quake_natural/ground1_7_norm
+}
+
+textures/quake_natural/ground1_8
+{
+	qer_editorimage 	textures/quake_natural/ground1_8
+	diffusemap			textures/quake_natural/ground1_8
+	bumpmap 			textures/quake_natural/ground1_8_norm
+}
+
+textures/quake_natural/rock1_2
+{
+	qer_editorimage 	textures/quake_natural/rock1_2
+	diffusemap			textures/quake_natural/rock1_2
+	bumpmap 			textures/quake_natural/rock1_2_norm
+	specularmap			textures/quake_natural/rock1_2_gloss
+}
+
+textures/quake_natural/rock3_2
+{
+	qer_editorimage 	textures/quake_natural/rock3_2
+	diffusemap			textures/quake_natural/rock3_2
+	bumpmap 			textures/quake_natural/rock3_2_norm
+}
+
+textures/quake_natural/rock3_7
+{
+	qer_editorimage 	textures/quake_natural/rock3_7
+	diffusemap			textures/quake_natural/rock3_7
+	bumpmap 			textures/quake_natural/rock3_7_norm
+}
+
+textures/quake_natural/rock3_8
+{
+	qer_editorimage 	textures/quake_natural/rock3_8
+	diffusemap			textures/quake_natural/rock3_8
+	bumpmap 			textures/quake_natural/rock3_8_norm
+}
+
+textures/quake_natural/rock4_1
+{
+	qer_editorimage 	textures/quake_natural/rock4_1
+	diffusemap			textures/quake_natural/rock4_1
+	bumpmap 			textures/quake_natural/rock4_1_norm
+}
+
+textures/quake_natural/rock4_2
+{
+	qer_editorimage 	textures/quake_natural/rock4_2
+	diffusemap			textures/quake_natural/rock4_2
+	bumpmap 			textures/quake_natural/rock4_2_norm
+}
+
+textures/quake_natural/rock5_2
+{
+	qer_editorimage 	textures/quake_natural/rock5_2
+	diffusemap			textures/quake_natural/rock5_2
+	bumpmap 			textures/quake_natural/rock5_2_norm
+}
+
+

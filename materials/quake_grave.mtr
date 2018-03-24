@@ -1,0 +1,110 @@
+//////////////////////////////////////////////
+//quake_grave
+//////////////////////////////////////////////
+
+
+textures/quake_grave/grave01_1
+{
+	qer_editorimage 	textures/quake_grave/grave01_1
+	diffusemap			textures/quake_grave/grave01_1
+	bumpmap 			textures/quake_grave/grave01_1_norm
+}
+
+textures/quake_grave/grave02_1
+{
+	qer_editorimage 	textures/quake_grave/grave02_1
+	diffusemap			textures/quake_grave/grave02_1
+	bumpmap 			textures/quake_grave/grave02_1_norm
+}
+
+textures/quake_grave/grave02_2
+{
+	qer_editorimage 	textures/quake_grave/grave02_2
+	diffusemap			textures/quake_grave/grave02_2
+	bumpmap 			textures/quake_grave/grave02_2_norm
+}
+
+textures/quake_grave/grave02_3
+{
+	qer_editorimage 	textures/quake_grave/grave02_3
+	diffusemap			textures/quake_grave/grave02_3
+	bumpmap 			textures/quake_grave/grave02_3_norm
+}
+
+textures/quake_grave/grave02_4
+{
+	qer_editorimage 	textures/quake_grave/grave02_4
+	diffusemap			textures/quake_grave/grave02_4
+	bumpmap 			textures/quake_grave/grave02_4_norm
+}
+
+textures/quake_grave/grave02_5
+{
+	qer_editorimage 	textures/quake_grave/grave02_5
+	diffusemap			textures/quake_grave/grave02_5
+	bumpmap 			textures/quake_grave/grave02_5_norm
+}
+
+textures/quake_grave/grave02_6
+{
+	qer_editorimage 	textures/quake_grave/grave02_6
+	diffusemap			textures/quake_grave/grave02_6
+	bumpmap 			textures/quake_grave/grave02_6_norm
+}
+
+textures/quake_grave/grave02_7
+{
+	qer_editorimage 	textures/quake_grave/grave02_7
+	diffusemap			textures/quake_grave/grave02_7
+	bumpmap 			textures/quake_grave/grave02_7_norm
+}
+
+textures/quake_grave/grave03_1
+{
+	qer_editorimage 	textures/quake_grave/grave03_1
+	diffusemap			textures/quake_grave/grave03_1
+	bumpmap 			textures/quake_grave/grave03_1_norm
+}
+
+textures/quake_grave/grave03_2
+{
+	qer_editorimage 	textures/quake_grave/grave03_2
+	diffusemap			textures/quake_grave/grave03_2
+	bumpmap 			textures/quake_grave/grave03_2_norm
+}
+
+textures/quake_grave/grave03_3
+{
+	qer_editorimage 	textures/quake_grave/grave03_3
+	diffusemap			textures/quake_grave/grave03_3
+	bumpmap 			textures/quake_grave/grave03_3_norm
+}
+
+textures/quake_grave/grave03_4
+{
+	qer_editorimage 	textures/quake_grave/grave03_4
+	diffusemap			textures/quake_grave/grave03_4
+	bumpmap 			textures/quake_grave/grave03_4_norm
+}
+
+textures/quake_grave/grave03_5
+{
+	qer_editorimage 	textures/quake_grave/grave03_5
+	diffusemap			textures/quake_grave/grave03_5
+	bumpmap 			textures/quake_grave/grave03_5_norm
+}
+
+textures/quake_grave/grave03_6
+{
+	qer_editorimage 	textures/quake_grave/grave03_6
+	diffusemap			textures/quake_grave/grave03_6
+	bumpmap 			textures/quake_grave/grave03_6_norm
+}
+
+textures/quake_grave/grave03_7
+{
+	qer_editorimage 	textures/quake_grave/grave03_7
+	diffusemap			textures/quake_grave/grave03_7
+	bumpmap 			textures/quake_grave/grave03_7_norm
+}
+

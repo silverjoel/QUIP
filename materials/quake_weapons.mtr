@@ -1,0 +1,406 @@
+/***********************************************************************
+
+	quake_weapons.mtr 
+	- Material shaders for Quake related weapons.  
+	tx = standard model material
+	inv = invisable for Ring of Shadows
+	w = world model material
+
+***********************************************************************/
+
+// Quake Axe - does have world model which uses standard material
+models/quake/weapons/axe/quake_axe_tx
+{
+	ricochet
+    noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/axe/axe_d.tga
+	bumpmap      	models/quake/weapons/axe/axe_local.tga
+	specularmap	 	models/quake/weapons/axe/axe_s.tga
+}
+
+
+models/quake/weapons/axe/quake_axe_inv
+{
+	noShadows
+	noselfShadow
+	unsmoothedTangents
+	translucent
+
+	bumpmap     models/quake/weapons/axe/axe_local.tga
+	{
+		blend 	specularmap
+		map		models/invis_s.tga
+		translate	time * 0 , time * 0.8
+	}
+}
+
+//Quake Shotgun - needs a world model and matrial (possible conversion from supershotgun)
+models/quake/weapons/shotgun/quake_shotgun_tx
+{
+	ricochet
+    noselfShadow
+	unsmoothedTangents
+
+    diffusemap	 	models/quake/weapons/shotgun/shotgun_d.tga
+	//bumpmap      	models/quake/weapons/shotgun/shotgun_local.tga
+	specularmap	 	models/quake/weapons/shotgun/shotgun_s.tga
+}
+
+models/quake/weapons/shotgun/quake_shotgun_inv
+{
+	noShadows
+	noselfShadow
+	unsmoothedTangents
+	translucent
+
+	{
+		blend 	specularmap
+		map		models/invis_s.tga
+		translate	time * 0 , time * 0.8
+	}
+}
+
+//Quake Supershotgun
+models/quake/weapons/supershotgun/quake_supershotgun_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/supershotgun/supershotgun_d.tga
+	//bumpmap      	models/quake/weapons/supershotgun/supershotgun_local.tga
+	specularmap	 	models/quake/weapons/supershotgun/supershotgun_s.tga
+}
+
+models/quake/weapons/supershotgun/quake_supershotgun_inv		
+{
+	noShadows
+	noselfShadow
+	unsmoothedTangents
+	translucent
+
+	{
+		blend 	specularmap
+		map		models/invis_s.tga
+		translate	time * 0 , time * 0.8
+	}
+}
+
+models/quake/weapons/supershotgun/quake_supershotgun_w
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/supershotgun/w_supershotgun_d.tga
+	//bumpmap      	models/quake/weapons/supershotgun/w_supershotgun_local.tga
+	specularmap	 	models/quake/weapons/supershotgun/w_supershotgun_s.tga
+}
+
+//Quake Nailgun
+models/quake/weapons/nailgun/quake_nailgun_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/nailgun/nailgun_d.tga
+	//bumpmap      	models/quake/weapons/nailgun/nailgun_local.tga
+	specularmap	 	models/quake/weapons/nailgun/nailgun_s.tga
+}
+
+models/quake/weapons/nailgun/quake_nailgun_inv		
+{
+	noShadows
+	noselfShadow
+	unsmoothedTangents
+	translucent
+
+	{
+		blend 	specularmap
+		map		models/invis_s.tga
+		translate	time * 0 , time * 0.8
+	}
+}
+
+models/quake/weapons/nailgun/quake_nailgun_w
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/nailgun/w_nailgun_d.tga
+	//bumpmap      	models/quake/weapons/nailgun/w_nailgun_local.tga
+	specularmap	 	models/quake/weapons/nailgun/w_nailgun_s.tga
+}
+
+//Quake Supernailgun
+models/quake/weapons/supernailgun/quake_supernailgun_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/supernailgun/supernailgun_d.tga
+	//bumpmap      	models/quake/weapons/supernailgun/supernailgun_local.tga
+	specularmap	 	models/quake/weapons/supernailgun/supernailgun_s.tga
+}
+
+models/quake/weapons/supernailgun/quake_supernailgun_inv
+{
+	noShadows
+	noselfShadow
+	unsmoothedTangents
+	translucent
+
+	{
+		blend 	specularmap
+		map		models/invis_s.tga
+		translate	time * 0 , time * 0.8
+	}
+}
+
+models/quake/weapons/supernailgun/quake_supernailgun_w
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/supernailgun/w_supernailgun_d.tga
+	//bumpmap      	models/quake/weapons/supernailgun/w_supernailgun_local.tga
+	specularmap	 	models/quake/weapons/supernailgun/w_supernailgun_s.tga
+}
+
+//Quake Grenade Launcher
+models/quake/weapons/grenadelauncher/quake_grenadelauncher_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/grenadelauncher/grenadelauncher_d.tga
+	//bumpmap      	models/quake/weapons/grenadelauncher/grenadelauncher_local.tga
+	specularmap	 	models/quake/weapons/grenadelauncher/grenadelauncher_s.tga
+}
+
+
+models/quake/weapons/grenadelauncher/quake_grenadelauncher_inv
+{
+	noShadows
+	noselfShadow
+	unsmoothedTangents
+	translucent
+
+	{
+		blend 	specularmap
+		map		models/invis_s.tga
+		translate	time * 0 , time * 0.8
+	}
+}
+
+models/quake/weapons/grenadelauncher/quake_grenadelauncher_w
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/grenadelauncher/w_grenadelauncher_d.tga
+	//bumpmap      	models/quake/weapons/grenadelauncher/w_grenadelauncher_local.tga
+	specularmap	 	models/quake/weapons/grenadelauncher/w_grenadelauncher_s.tga
+}
+
+//Quake Rocket Launcher
+models/quake/weapons/rocketlauncher/quake_rocketlauncher_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/rocketlauncher/rocketlauncher_d.tga
+	//bumpmap      	models/quake/weapons/rocketlauncher/rocketlauncher_local.tga
+	specularmap	 	models/quake/weapons/rocketlauncher/rocketlauncher_s.tga
+}
+
+models/quake/weapons/rocketlauncher/quake_rocketlauncher_inv
+{
+	noShadows
+	noselfShadow
+	unsmoothedTangents
+	translucent
+
+	{
+		blend 	specularmap
+		map		models/invis_s.tga
+		translate	time * 0 , time * 0.8
+	}
+}
+
+models/quake/weapons/rocketlauncher/quake_rocketlauncher_w
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/rocketlauncher/w_rocketlauncher_d.tga
+	//bumpmap      	models/quake/weapons/rocketlauncher/w_rocketlauncher_local.tga
+	specularmap	 	models/quake/weapons/rocketlauncher/w_rocketlauncher_s.tga
+}
+
+//Quake Lightning Gun
+models/quake/weapons/lightning/quake_lightning_tx
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/lightning/lightning_d.tga
+	//bumpmap      	models/quake/weapons/lightning/lightning_local.tga
+	specularmap	 	models/quake/weapons/lightning/lightning_s.tga
+}
+
+models/quake/weapons/lightning/quake_lightning_inv
+{
+	noShadows
+	noselfShadow
+	unsmoothedTangents
+	translucent
+
+	{
+		blend 	specularmap
+		map		models/invis_s.tga
+		translate	time * 0 , time * 0.8
+	}
+}
+
+models/quake/weapons/lightning/quake_lightning_w
+{
+	ricochet
+	noselfShadow
+	unsmoothedTangents
+
+	diffusemap	 	models/quake/weapons/lightning/w_lightning_d.tga
+	//bumpmap      	models/quake/weapons/lightning/w_lightning_local.tga
+	specularmap	 	models/quake/weapons/lightning/w_lightning_s.tga
+}
+
+//POWERUPS
+
+
+
+
+
+
+
+
+
+//MUZZLE FLASHES
+
+models/quake/weapons/nailgun/quake_nailgun_flash
+{
+	sort nearest
+	{
+		forceHighQuality
+		if 		( time + parm4 ) * 8 < 1.0
+		blend 	add
+		map 		textures/particles/pistol_mflash_strip.tga
+		scale 	1 / 12 , 1
+		scroll 	table12[ (time + parm4) * 8 ] , 0
+		rotate	rotate90[ parm5 ]
+	}
+	//{
+	//	forceHighQuality
+	//	if 		( time + parm4 ) * 7 < 1.0
+	//	blend 	add
+	//	map 		textures/particles/pistol_mflash2_strip.tga
+	//	scale 	1 / 4 , 1
+	//	scroll 	table4[ (time + parm4) * 7] , 0
+	//}
+}
+
+models/quake/weapons/lightning/quake_lightning_bolt
+{
+	noSelfShadow
+	noshadows
+	translucent
+	discrete
+	twosided
+	nonsolid
+	noimpact
+	sort nearest
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 8 < 1.0
+		maskcolor
+		map 		makealpha(models/quake/weapons/lightning/lightning_boltmask.tga)
+	}
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 8 < 1.0
+	   	blend 	gl_dst_alpha, gl_one
+	    	maskalpha
+	    	map 		models/quake/weapons/lightning/lightning_bolt.tga
+		scale 	1, 1
+		translate	time * -0.6 , time * 0
+		rgb		neontable2 [ time * 0.35 ]
+	}
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 8 < 1.0
+	   	blend 	gl_dst_alpha, gl_one
+	    	maskalpha
+	    	map 		models/quake/weapons/lightning/lightning_bolt.tga
+		scale 	1, 1
+		translate	time * -1 , time * 0
+	}
+}
+
+models/quake/weapons/lightning/quake_lightning_small
+{
+	noSelfShadow
+	noshadows
+	translucent
+	discrete
+	twosided
+	nonsolid
+	noimpact
+	sort nearest
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 8 < 1.0
+		maskcolor
+		map 		makealpha(models/quake/weapons/lightning/lightning_boltmask.tga)
+	}
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 8 < 1.0
+	   	blend 	gl_dst_alpha, gl_one
+	    	maskalpha
+	    	map 		models/quake/weapons/lightning/lightning_bolt.tga
+		scale 	0.25, 1
+		translate	time * 0.4 , time * 0
+	}
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 8 < 1.0
+	   	blend 	gl_dst_alpha, gl_one
+	    	maskalpha
+	    	map 		models/quake/weapons/lightning/lightning_bolt.tga
+		scale 	0.25, 1
+		translate	time * 0.75 , time * 0
+		rgb		neontable2 [ time * 0.75 ]
+	}
+}
+
+models/quake/weapons/lightning/quake_lightning_ball
+{
+	sort nearest
+	{
+		forceHighQuality
+		if ( time + parm4 ) * 8 < 1.0
+		blend add
+		map 			models/quake/weapons/lightning/lightning_ball.tga
+		rotate		rotate90[ parm5 ]
+	}
+}

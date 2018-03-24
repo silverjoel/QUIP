@@ -1,0 +1,103 @@
+//////////////////////////////////////////////
+//quake_wood
+//////////////////////////////////////////////
+
+
+textures/quake_wood/wood01_1
+{
+	qer_editorimage 	textures/quake_wood/wood01_1
+	diffusemap			textures/quake_wood/wood01_1
+	bumpmap 			textures/quake_wood/wood01_1_norm
+}
+
+textures/quake_wood/wood01_2
+{
+	qer_editorimage 	textures/quake_wood/wood01_2
+	diffusemap			textures/quake_wood/wood01_2
+	bumpmap 			textures/quake_wood/wood01_2_norm
+}
+
+textures/quake_wood/wood01_3
+{
+	qer_editorimage 	textures/quake_wood/wood01_3
+	diffusemap			textures/quake_wood/wood01_3
+	bumpmap 			textures/quake_wood/wood01_3_norm
+}
+
+textures/quake_wood/wood02_1
+{
+	qer_editorimage 	textures/quake_wood/wood02_1
+	diffusemap			textures/quake_wood/wood02_1
+	bumpmap 			textures/quake_wood/wood02_1_norm
+}
+
+textures/quake_wood/wood02_2
+{
+	qer_editorimage 	textures/quake_wood/wood02_2
+	diffusemap			textures/quake_wood/wood02_2
+	bumpmap 			textures/quake_wood/wood02_2_norm
+}
+
+textures/quake_wood/wood02_3
+{
+	qer_editorimage 	textures/quake_wood/wood02_3
+	diffusemap			textures/quake_wood/wood02_3
+	bumpmap 			textures/quake_wood/wood02_3_norm
+}
+
+textures/quake_wood/wood02_4
+{
+	qer_editorimage 	textures/quake_wood/wood02_4
+	diffusemap			textures/quake_wood/wood02_4
+	bumpmap 			textures/quake_wood/wood02_4_norm
+}
+
+
+textures/quake_wood/wood03_1
+{
+	qer_editorimage 	textures/quake_wood/wood03_1
+	diffusemap			textures/quake_wood/wood03_1
+	bumpmap 			textures/quake_wood/wood03_1_norm
+}
+
+textures/quake_wood/wood03_2
+{
+	qer_editorimage 	textures/quake_wood/wood03_2
+	diffusemap			textures/quake_wood/wood03_2
+	bumpmap 			textures/quake_wood/wood03_2_norm
+}
+
+textures/quake_wood/wood03_3
+{
+	qer_editorimage 	textures/quake_wood/wood03_3
+	diffusemap			textures/quake_wood/wood03_3
+	bumpmap 			textures/quake_wood/wood03_3_norm
+}
+
+textures/quake_wood/wood04_1
+{
+	qer_editorimage 	textures/quake_wood/wood04_1
+	diffusemap			textures/quake_wood/wood04_1
+	bumpmap 			textures/quake_wood/wood04_1_norm
+}
+
+textures/quake_wood/wood04_2
+{
+	qer_editorimage 	textures/quake_wood/wood04_2
+	diffusemap			textures/quake_wood/wood04_2
+	bumpmap 			textures/quake_wood/wood04_2_norm
+}
+
+textures/quake_wood/wood04_3
+{
+	qer_editorimage 	textures/quake_wood/wood04_3
+	diffusemap			textures/quake_wood/wood04_3
+	bumpmap 			textures/quake_wood/wood04_3_norm
+}
+
+textures/quake_wood/wood04_4
+{
+	qer_editorimage 	textures/quake_wood/wood04_4
+	diffusemap			textures/quake_wood/wood04_4
+	bumpmap 			textures/quake_wood/wood04_4_norm
+}

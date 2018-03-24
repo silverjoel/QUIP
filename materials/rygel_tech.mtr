@@ -1,0 +1,44 @@
+//////////////////////////////////////////////
+//rygel_tech
+//////////////////////////////////////////////
+
+textures/rygel_tech/grate01_1
+{
+	qer_editorimage 	textures/rygel_tech/grate01_1
+	diffusemap			textures/rygel_tech/grate01_1
+	bumpmap 			textures/rygel_tech/grate01_1_norm
+	specularmap 		textures/rygel_tech/grate01_1_gloss
+}
+
+textures/rygel_tech/grate02_2
+{
+	qer_editorimage 	textures/rygel_tech/grate02_2
+	diffusemap			textures/rygel_tech/grate02_2
+	bumpmap 			textures/rygel_tech/grate02_2_norm
+	specularmap 		textures/rygel_tech/grate02_2_gloss
+}
+
+textures/rygel_tech/hh4hdd4
+{
+	qer_editorimage 	textures/rygel_tech/hh4hdd4
+	diffusemap			textures/rygel_tech/hh4hdd4
+	bumpmap 			textures/rygel_tech/hh4hdd4_norm
+	specularmap 		textures/rygel_tech/hh4hdd4_gloss
+}
+
+textures/rygel_tech/tech10_1
+{
+	qer_editorimage 	textures/rygel_tech/tech10_1
+	diffusemap			textures/rygel_tech/tech10_1
+	bumpmap 			textures/rygel_tech/tech10_1_norm
+	specularmap 		textures/rygel_tech/tech10_1_gloss
+}
+
+textures/rygel_tech/tech10_3
+{
+	qer_editorimage 	textures/rygel_tech/tech10_3
+	diffusemap			textures/rygel_tech/tech10_3
+	bumpmap 			textures/rygel_tech/tech10_3_norm
+	specularmap 		textures/rygel_tech/tech10_3_gloss
+}
+

@@ -1,0 +1,86 @@
+/***********************************************************************
+
+weapon_quake_axe.script
+
+***********************************************************************/
+
+// blend times
+#define AXE_IDLE_TO_LOWER		4
+#define AXE_IDLE_TO_PUNCH		0
+#define AXE_RAISE_TO_IDLE		4
+#define AXE_PUNCH_TO_IDLE		1
+
+object weapon_quake_axe : weapon_base {
+	float		side;
+
+	void		init();
+	
+	void		Lower();
+	void		Raise();
+	void		Idle();
+	void		Punch();
+	void		ExitCinematic();
+	string	GetFireAnim();
+};
+
+void weapon_quake_axe::init() {
+	weaponState( "Raise", 0 );
+}
+
+void weapon_quake_axe::Raise() {
+	weaponRising();
+	playAnim( ANIMCHANNEL_ALL, "raise" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, AXE_RAISE_TO_IDLE ) );
+	weaponState( "Idle", AXE_RAISE_TO_IDLE );
+}
+
+void weapon_quake_axe::Lower() {
+	weaponLowering();
+	playAnim( ANIMCHANNEL_ALL, "putaway" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, 0 ) );
+	weaponHolstered();
+	waitUntil( WEAPON_RAISEWEAPON );
+	weaponState( "Raise", 0 );
+}
+
+void weapon_quake_axe::Idle() {
+	weaponReady();
+	while( 1 ) {
+		if ( WEAPON_LOWERWEAPON ) {
+			weaponState( "Lower", AXE_IDLE_TO_LOWER );
+		}
+		if ( WEAPON_ATTACK ) {
+			weaponState( "Punch", AXE_IDLE_TO_PUNCH );
+		}
+		waitFrame();
+	}
+}
+
+void weapon_quake_axe::Punch() {
+	//if ( isQuad() ) {
+	//	startSound( "snd_firequad", SND_CHANNEL_BODY3, false );
+	//	playAnim( ANIMCHANNEL_ALL, GetFireAnim() );
+	//} else {
+	//	playAnim( ANIMCHANNEL_ALL, GetFireAnim() );
+	//}
+
+	playAnim( ANIMCHANNEL_ALL, GetFireAnim() );
+
+	sys.wait( 0.1 );
+	melee();
+	waitUntil( animDone( ANIMCHANNEL_ALL, AXE_PUNCH_TO_IDLE ) );
+	side = !side;
+	weaponState( "Idle", AXE_PUNCH_TO_IDLE );
+}
+
+void weapon_quake_axe::ExitCinematic() {
+	weaponState( "Idle", 0 );
+}
+
+string weapon_quake_axe::GetFireAnim() {
+	if ( side ) {
+		return "punch_left";
+	} else {
+		return "punch_right";
+	}
+}

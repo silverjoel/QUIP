@@ -1,0 +1,103 @@
+/***********************************************************************
+
+weapon_quake_supershotgun.script
+
+***********************************************************************/
+
+#define 	SUPERSHOTGUN_FIRERATE		0.8
+#define	SUPERSHOTGUN_NUMPROJECTILES		12
+
+// blend times
+#define 	SUPERSHOTGUN_IDLE_TO_LOWER	0
+#define 	SUPERSHOTGUN_IDLE_TO_FIRE	0
+#define 	SUPERSHOTGUN_RAISE_TO_IDLE	0
+#define 	SUPERSHOTGUN_FIRE_TO_IDLE	0
+
+object weapon_quake_supershotgun : weapon_base {
+	float		next_attack;
+	float		spread;
+	
+	void		init();
+	
+	void		Lower();
+	void		Raise();
+	void		Idle();
+	void		Fire();
+	void		ExitCinematic();
+};
+
+void weapon_quake_supershotgun::init() {
+	next_attack 	= 0;
+	spread		= getFloatKey( "spread" );
+	weaponState		( "Raise", 0 );
+}
+
+void weapon_quake_supershotgun::Raise() {
+	weaponRising();
+	playAnim( ANIMCHANNEL_ALL, "raise" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, SUPERSHOTGUN_RAISE_TO_IDLE ) );
+	weaponState( "Idle", SUPERSHOTGUN_RAISE_TO_IDLE );
+}
+
+void weapon_quake_supershotgun::Lower() {
+	weaponLowering();
+	playAnim( ANIMCHANNEL_ALL, "putaway" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, 0 ) );
+	weaponHolstered();
+	waitUntil( WEAPON_RAISEWEAPON );
+	weaponState( "Raise", 0 );
+}
+
+void weapon_quake_supershotgun::Idle() {
+	float currentTime;
+	float ammoClip;
+	float avail;
+	float clip_size;
+	
+	clip_size = clipSize();	
+	
+	if ( !ammoAvailable() = 0) {
+		weaponOutOfAmmo();
+	} else {
+		weaponReady();
+	}
+	playCycle( ANIMCHANNEL_ALL, "idle" );
+	while( 1 ) {
+		if ( WEAPON_LOWERWEAPON ) {
+			weaponState( "Lower", SUPERSHOTGUN_IDLE_TO_LOWER );
+		}
+		currentTime = sys.getTime();
+		ammoClip = ammoAvailable();
+		if ( ( currentTime >= next_attack ) && WEAPON_ATTACK ) {
+			if ( ammoClip > 0 ) {
+				weaponState( "Fire", SUPERSHOTGUN_IDLE_TO_FIRE );
+			}
+		}
+		waitFrame();
+	}
+}
+
+void weapon_quake_supershotgun::Fire() {
+	float ammoClip;
+	
+	next_attack = sys.getTime() + SUPERSHOTGUN_FIRERATE;
+	
+	ammoClip = ammoInClip();
+	
+	launchProjectiles( SUPERSHOTGUN_NUMPROJECTILES, spread, 0, 1.0, 1.0 );
+	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	
+	//if ( isQuad() ) {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	//	startSound( "snd_firequad", SND_CHANNEL_BODY2, false );
+	//} else {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	//}
+	weaponState( "Idle", SUPERSHOTGUN_FIRE_TO_IDLE );
+}
+
+void weapon_quake_supershotgun::ExitCinematic() {
+	next_attack = 0;
+	weaponState( "Idle", 0 );
+}
+

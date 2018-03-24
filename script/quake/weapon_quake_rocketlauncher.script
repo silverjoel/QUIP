@@ -1,0 +1,106 @@
+/***********************************************************************
+
+weapon_quake_rocketlauncher.script
+
+***********************************************************************/
+
+#define QUAKE_ROCKETLAUNCHER_NUMPROJECTILES	1
+#define QUAKE_ROCKETLAUNCHER_FIREDELAY		0.8
+
+// blend times
+#define QUAKE_ROCKETLAUNCHER_IDLE_TO_LOWER	0
+#define QUAKE_ROCKETLAUNCHER_IDLE_TO_FIRE		0
+#define QUAKE_ROCKETLAUNCHER_RAISE_TO_IDLE	0
+#define QUAKE_ROCKETLAUNCHER_FIRE_TO_IDLE		0
+
+object weapon_quake_rocketlauncher : weapon_base {
+	float		next_attack;
+	float		spread;
+	
+	string	skin_invisible;
+	
+	void		init();
+	
+	void		Lower();
+	void		Raise();
+	void		Idle();
+	void		Fire();
+	void		ExitCinematic();
+};
+
+void weapon_quake_rocketlauncher::init() {
+	next_attack			= 0;
+	spread			= getFloatKey( "spread" );
+	skin_invisible		= getKey( "skin_invisible" );
+	weaponState			( "Raise", 0 );
+}
+
+void weapon_quake_rocketlauncher::Raise() {
+	weaponRising();
+	playAnim( ANIMCHANNEL_ALL, "raise" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, QUAKE_ROCKETLAUNCHER_RAISE_TO_IDLE ) );
+	weaponState( "Idle", QUAKE_ROCKETLAUNCHER_RAISE_TO_IDLE );
+}
+
+void weapon_quake_rocketlauncher::Lower() {
+	weaponLowering();
+	playAnim( ANIMCHANNEL_ALL, "putaway" );
+	waitUntil( animDone( ANIMCHANNEL_ALL, 0 ) );
+	weaponHolstered();
+	waitUntil( WEAPON_RAISEWEAPON );
+	weaponState( "Raise", 0 );
+}
+
+void weapon_quake_rocketlauncher::Idle() {
+	float ammoClip;
+	float avail;
+	float clip_size;
+	float currentTime;
+	
+	clip_size = clipSize();	
+	
+	if ( !ammoAvailable() = 0) {
+		weaponOutOfAmmo();
+	} else {
+		weaponReady();
+	}
+
+	playCycle( ANIMCHANNEL_ALL, "idle" );
+	while( 1 ) {
+		if ( WEAPON_LOWERWEAPON ) {
+			weaponState( "Lower", QUAKE_ROCKETLAUNCHER_IDLE_TO_LOWER );
+		}
+		currentTime = sys.getTime();
+		ammoClip = ammoAvailable();
+		if ( ( currentTime >= next_attack ) && WEAPON_ATTACK ) {
+			if ( ammoClip > 0 ) {
+				weaponState( "Fire", QUAKE_ROCKETLAUNCHER_IDLE_TO_FIRE );
+			}		
+		}
+		waitFrame();
+	}
+}
+
+void weapon_quake_rocketlauncher::Fire() {
+	float ammoClip;
+	
+	next_attack = sys.getTime() + QUAKE_ROCKETLAUNCHER_FIREDELAY;
+	
+	ammoClip = ammoInClip();
+	
+	launchProjectiles( QUAKE_ROCKETLAUNCHER_NUMPROJECTILES, spread, 0, 1.0, 1.0 );
+	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+
+	//if ( isQuad() ) {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	//	startSound( "snd_firequad", SND_CHANNEL_BODY2, false );
+	//} else {
+	//	startSound( "snd_fire", SND_CHANNEL_BODY, false );
+	//}
+	weaponState( "Idle", QUAKE_ROCKETLAUNCHER_FIRE_TO_IDLE );
+}
+
+void weapon_quake_rocketlauncher::ExitCinematic() {
+	next_attack = 0;
+	weaponState( "Idle", 0 );
+}

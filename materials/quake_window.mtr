@@ -1,0 +1,103 @@
+//////////////////////////////////////////////
+//quake_window
+//////////////////////////////////////////////
+
+
+textures/quake_window/window01_1
+{
+	qer_editorimage 	textures/quake_window/window01_1
+	diffusemap 			textures/quake_window/window01_1
+	bumpmap 			textures/quake_window/window01_1_norm
+}
+
+textures/quake_window/window01_2
+{
+	qer_editorimage 	textures/quake_window/window01_2
+	diffusemap 			textures/quake_window/window01_2
+	bumpmap 			textures/quake_window/window01_2_norm
+}
+
+textures/quake_window/window01_3
+{
+	qer_editorimage 	textures/quake_window/window01_3
+	diffusemap 			textures/quake_window/window01_3
+	bumpmap 			textures/quake_window/window01_3_norm
+}
+
+textures/quake_window/window01_4
+{
+	qer_editorimage 	textures/quake_window/window01_4
+	diffusemap 			textures/quake_window/window01_4
+	bumpmap 			textures/quake_window/window01_4_norm
+}
+
+textures/quake_window/window02_1
+{
+	qer_editorimage 	textures/quake_window/window02_1
+	diffusemap 			textures/quake_window/window02_1
+	bumpmap 			textures/quake_window/window02_1_norm
+	specularmap			textures/quake_window/window02_1_gloss
+}
+
+textures/quake_window/window02_2
+{
+	qer_editorimage 	textures/quake_window/window02_2
+	diffusemap 			textures/quake_window/window02_2
+	bumpmap 			textures/quake_window/window02_2_norm
+	specularmap			textures/quake_window/window02_2_gloss
+}
+
+textures/quake_window/window02_3
+{
+	qer_editorimage 	textures/quake_window/window02_3
+	diffusemap 			textures/quake_window/window02_3
+	bumpmap 			textures/quake_window/window02_3_norm
+	specularmap			textures/quake_window/window02_3_gloss
+}
+
+textures/quake_window/window02_4
+{
+	qer_editorimage 	textures/quake_window/window02_4
+	diffusemap 			textures/quake_window/window02_4
+	bumpmap 			textures/quake_window/window02_4_norm
+	specularmap			textures/quake_window/window02_4_gloss
+}
+
+textures/quake_window/window02_5
+{
+	qer_editorimage 	textures/quake_window/window02_5
+	diffusemap 			textures/quake_window/window02_5
+	bumpmap 			textures/quake_window/window02_5_norm
+	specularmap			textures/quake_window/window02_5_gloss
+	{
+		blend	add
+		map				textures/quake_window/window02_5
+	}
+}
+
+textures/quake_window/window03_1
+{
+	qer_editorimage 	textures/quake_window/window03_1
+	diffusemap 			textures/quake_window/window03_1
+	bumpmap 			textures/quake_window/window03_1_norm
+	specularmap			textures/quake_window/window03_1_gloss
+}
+
+textures/quake_window/window03_2
+{
+	qer_editorimage 	textures/quake_window/window03_2
+	diffusemap 			textures/quake_window/window03_2
+	bumpmap 			textures/quake_window/window03_2_norm
+	specularmap			textures/quake_window/window03_2_gloss
+}
+
+textures/quake_window/window03_3
+{
+	qer_editorimage 	textures/quake_window/window03_3
+	diffusemap 			textures/quake_window/window03_3
+	{
+		blend	add
+		map				textures/quake_window/window03_3_luma
+	}
+	bumpmap 			textures/quake_window/window03_3_norm		
+}

@@ -1,0 +1,17 @@
+//////////////////////////////////////////////
+//quake_window
+//////////////////////////////////////////////
+
+
+lights/window03_3
+{
+	{
+		forceHighQuality
+		map textures/quake_window/window03_3_light
+		colored
+		zeroclamp
+		
+	}
+	//bumpmap 			textures/quake_window/window03_3_norm
+	//specularmap			textures/quake_window/window03_3_gloss
+}

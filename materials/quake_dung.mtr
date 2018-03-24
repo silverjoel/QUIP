@@ -1,0 +1,53 @@
+//////////////////////////////////////////////
+//quake_dung
+//////////////////////////////////////////////
+
+
+textures/quake_dung/dung01_1
+{
+	qer_editorimage 	textures/quake_dung/dung01_1
+	diffusemap			textures/quake_dung/dung01_1
+	bumpmap 			textures/quake_dung/dung01_1_norm
+}
+
+textures/quake_dung/dung01_2
+{
+	qer_editorimage 	textures/quake_dung/dung01_2
+	diffusemap			textures/quake_dung/dung01_2
+	bumpmap 			textures/quake_dung/dung01_2_norm
+}
+
+textures/quake_dung/dung01_3
+{
+	qer_editorimage 	textures/quake_dung/dung01_3
+	diffusemap			textures/quake_dung/dung01_3
+	bumpmap 			textures/quake_dung/dung01_3_norm
+}
+
+textures/quake_dung/dung01_4
+{
+	qer_editorimage 	textures/quake_dung/dung01_4
+	diffusemap			textures/quake_dung/dung01_4
+	bumpmap 			textures/quake_dung/dung01_4_norm
+}
+
+textures/quake_dung/dung01_5
+{
+	qer_editorimage 	textures/quake_dung/dung01_5
+	diffusemap			textures/quake_dung/dung01_5
+	bumpmap 			textures/quake_dung/dung01_5_norm
+}
+
+textures/quake_dung/dung02_1
+{
+	qer_editorimage 	textures/quake_dung/dung02_1
+	diffusemap			textures/quake_dung/dung02_1
+	bumpmap 			textures/quake_dung/dung02_1_norm
+}
+
+textures/quake_dung/dung02_5
+{
+	qer_editorimage 	textures/quake_dung/dung02_5
+	diffusemap			textures/quake_dung/dung02_5
+	bumpmap 			textures/quake_dung/dung02_5_norm
+}

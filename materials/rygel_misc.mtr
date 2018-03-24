@@ -1,0 +1,19 @@
+//////////////////////////////////////////////
+//rygel_misc
+//////////////////////////////////////////////
+
+textures/rygel_misc/rock3_2
+{
+	qer_editorimage 	textures/rygel_misc/rock3_2
+	diffusemap			textures/rygel_misc/rock3_2
+	bumpmap 			textures/rygel_misc/rock3_2_norm
+	specularmap 		textures/rygel_misc/rock3_2_gloss
+}
+
+textures/rygel_misc/rock4_2
+{
+	qer_editorimage 	textures/rygel_misc/rock4_2
+	diffusemap			textures/rygel_misc/rock4_2
+	bumpmap 			textures/rygel_misc/rock4_2_norm
+	specularmap 		textures/rygel_misc/rock4_2_gloss
+}

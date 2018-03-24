@@ -1,0 +1,32 @@
+//////////////////////////////////////////////
+//misc_crate
+//////////////////////////////////////////////
+
+
+textures/misc_crate/crate02s
+{
+	qer_editorimage 	textures/misc_crate/crate02s
+	diffusemap			textures/misc_crate/crate02s
+	bumpmap 			textures/misc_crate/crate02s_norm
+}
+
+textures/misc_crate/crate02t
+{
+	qer_editorimage 	textures/misc_crate/crate02t
+	diffusemap			textures/misc_crate/crate02t
+	bumpmap 			textures/misc_crate/crate02t_norm
+}
+
+textures/misc_crate/crate03s
+{
+	qer_editorimage 	textures/misc_crate/crate03s
+	diffusemap			textures/misc_crate/crate03s
+	bumpmap 			textures/misc_crate/crate03s_norm
+}
+
+textures/misc_crate/crate03t
+{
+	qer_editorimage 	textures/misc_crate/crate03t
+	diffusemap			textures/misc_crate/crate03t
+	bumpmap 			textures/misc_crate/crate03t_norm
+}

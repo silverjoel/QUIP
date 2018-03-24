@@ -1,0 +1,15 @@
+//////////////////////////////////////////////
+//rygel_light
+//////////////////////////////////////////////
+
+textures/rygel_light/lite_fart3
+{
+	qer_editorimage 	textures/rygel_light/lite_fart3
+	diffusemap			textures/rygel_light/lite_fart3
+	bumpmap 			textures/rygel_light/lite_fart3_norm
+	specularmap 		textures/rygel_light/lite_fart3_gloss
+	{
+		blend add
+		map				textures/rygel_light/lite_fart3_luma
+	}
+}
